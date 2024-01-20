@@ -7,14 +7,105 @@
 
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
 
+    <style>
+        #vrOverlay {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            width: calc(90vw - 2rem);
+            height: calc(10vh - 2rem);
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.25);
+            border: solid 1px aqua;
+            border-bottom: none;
+            backdrop-filter: blur(4px);
+            z-index: 9990;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 1rem;
+            gap: 1rem;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        .screenshot-button {
+            /* background-color: red; */
+            width: 10vh;
+            height: 10vh;
+            display: none;
+        }
+        .screenshot-button img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        #sharePageQr {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5vh;
+            height: 5vh;
+        }
+        #sharePageQr img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        #fullscreenImage {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 10010;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        #fullscreenImage img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .a-loader-title {
+            color: aqua;
+        }
+        .a-enter-vr-button {
+            background-color: rgba(0, 255, 255, 0.5);
+            /* box-shadow: inset 0 0 10px #000; */
+            transition: ease-in-out 250ms;
+        }
+        .a-enter-vr-button:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            /* box-shadow: inset 0 0 10px #000; */
+        }
 
+
+    </style>
+
+    <script src="./public/logic/vr.js" defer ></script>
 </head>
 <body>
-    <a-scene>
+    <div id="vrOverlay">
+        <div class="screenshot-button" id="screenshotButtonEqui"><img src="./public/media/images/system/icons/360-view_1a.png" alt=""></div>
+        <div class="screenshot-button" id="screenshotButtonRect"><img src="./public/media/images/system/icons/screenshot-perspective_1a.png" alt=""></div>
+        <div id="sharePageQr"><img src="./public/media/images/qr/olabs_spreadshield_1a1a1b.png" alt="oLabs SpreadShield QR Code"></div>
+    </div>
+
+    <div id="fullscreenImage">
+        <img src="" alt="">
+    </div>
+    <a-scene antialiasing="true" loading-screen="dotsColor: aqua; backgroundColor: black" real-world-meshing renderer="antialias: true;
+                   colorManagement: true;
+                   sortObjects: true;
+                   physicallyCorrectLights: true;"
+                   xr-mode-ui="enabled: true;"
+                   >
         <a-assets>
             <img id="cora360" src="./public/media/images/360/cora-driving_test_1a1a1c.png" alt="">
             <img id="background" src="./public/media/images/360/dashboard_1a1a1a.jpg" alt="">
             <img id="water" src="./public/media/images/textures/grass/1.jpg" alt="">
+            <img id="olabsQr" src="./public/media/images/qr/olabs_spreadshield_1a1a1b.png" alt="">
         </a-assets>
         <a-sphere
             position="0 -1 0"
@@ -23,7 +114,12 @@
             material="transparent: true; src: #cora360; side: double;"
         ></a-sphere>
 
-
+        <a-image
+            src="#olabsQr"
+            width="4"
+            height="4"
+            position="0 0 -20"
+        ></a-image>
       <a-sky color="lightskyblue" src="#background" rotation="0 0 0"></a-sky>
     </a-scene>
 </body>
