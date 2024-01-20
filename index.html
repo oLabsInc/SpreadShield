@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WideSpread</title>
+
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+
+
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="cora360" src="./public/media/images/360/cora-driving_test_1a1a1c.png" alt="">
+            <img id="background" src="./public/media/images/360/dashboard_1a1a1a.jpg" alt="">
+            <img id="water" src="./public/media/images/textures/grass/1.jpg" alt="">
+        </a-assets>
+        <a-sphere
+            position="0 -1 0"
+            radius="-25"
+            rotation="180 270 0"
+            material="transparent: true; src: #cora360; side: double;"
+        ></a-sphere>
+
+
+      <a-sky color="lightskyblue" src="#background" rotation="0 0 0"></a-sky>
+    </a-scene>
+</body>
+</html>
