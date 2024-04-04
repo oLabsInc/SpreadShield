@@ -32,3 +32,14 @@ console.log(document.querySelector('a-scene').components)
 // <a href="https://www.freepik.com/icon/360_1614527">Icon by Kiranshastry</a>
 
 // https://www.freepik.com/author/kiranshastry/icons/kiranshastry-gradient_630?t=f
+
+
+
+// QR CODE DESIGN
+
+
+// https://www.qrcode-monkey.com/
+// #56B7C0 -> #0277BD Linear Gradient
+// Body Shape: 6th template
+// Eye Frame Shape: 2nd
+// Eye Ball Shape: 2nd
