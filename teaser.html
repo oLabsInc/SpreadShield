@@ -19,20 +19,25 @@
                 <a-asset-item id="city" src="./public/media/models/backdrop/city.glb"></a-asset-item>
                 <a-asset-item id="lambo" src="./public/media/models/vehicle/lambo.glb"></a-asset-item>
                 <img id="intersection4way" src="./public/media/images/windshield-icon/25.png" alt="" class="spreadshield-icon">
+                <img id="crossing" src="./public/media/images/windshield-icon/3489.png" alt="" class="spreadshield-icon">
 
                 
             </a-assets>
 
+            <a-entity light="angle: 80; color: #d4d4d4; intensity: 5; penumbra: 0.27; castShadow: true; shadowBias: 0.26"
+                position="0 10 0"></a-entity>
 
             <a-entity id="rig" position="-0.5 0 0" animation="property: position; to: 0 0 -425; dur: 60000; easing: linear; loop: false; enabled: true;">
                 <a-entity id="spreadshieldContainer">
                     <a-image src="#intersection4way" material="side: front; opacity: 0.75" geometry="" position="0.31532 0.9907 -1.44041"
+                        scale="0.15 0.15 0.15"></a-image>
+                    <a-image src="#crossing" material="side: front; opacity: 0.75" geometry="" position="0 0.9907 -1.44041"
                         scale="0.25 0.25 0.25"></a-image>
                 </a-entity>
-                <a-light id="dirlight" intensity="0.5" light="castShadow:true;type:directional" position="1 1 1"></a-light>
+                <a-light id="dirlight" intensity="0.25" light="castShadow:true;type:directional" position="1 1 1"></a-light>
 
                 <a-entity gltf-model="#lambo" position="0.360 0.02 -0.17" rotation="0 180 0" scale="1 1 1"></a-entity>
-                <a-entity id="camera" position="0 1 0" camera look-controls></a-entity>
+                <a-entity id="camera" position="0 0.955 0" camera look-controls></a-entity>
             </a-entity>
 
 <a-entity gltf-model="#city" position="-75 0 -75" rotation="0 -90 0" scale="0.01 0.01 0.01"></a-entity>
