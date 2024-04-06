@@ -17,7 +17,7 @@
 
             <a-assets>
                 <a-asset-item id="city" src="./public/media/models/backdrop/city.glb"></a-asset-item>
-                <a-asset-item id="lambo" src="./public/media/models/vehicle/lambo.glb"></a-asset-item>
+                <a-asset-item id="lambo" src="./public/media/models/vehicle/lambo_2.glb"></a-asset-item>
                 <img id="intersection4way" src="./public/media/images/windshield-icon/25.png" alt="" class="spreadshield-icon">
                 <img id="crossing" src="./public/media/images/windshield-icon/3489.png" alt="" class="spreadshield-icon">
                 <img id="bwCaution" src="./public/media/images/windshield-icon/23.png" alt="" class="spreadshield-icon">
@@ -45,7 +45,7 @@
             <a-entity light="angle: 80; color: #d4d4d4; intensity: 5; penumbra: 0.27; castShadow: true; shadowBias: 0.26"
                 position="0 10 0"></a-entity>
 
-            <a-entity id="rig" position="-0.5 0 0" animation="property: position; to: 0 0 -425; dur: 30000; easing: linear; loop: true; enabled: true;">
+            <a-entity id="rig" position="-0.5 0 0" animation="property: position; to: 0 0 -325; dur: 30000; easing: linear; loop: true; enabled: true;">
                 <a-entity id="spreadshieldContainer">
                     <a-image src="#cautionSlow" material="side: front; opacity: 0.75" geometry="" position="0.5 0.9907 -1.44041"
                         scale="0.15 0.15 0.15"></a-image>
@@ -57,8 +57,8 @@
                 <a-entity gltf-model="#lambo" position="0.360 0.02 -0.17" rotation="0 180 0" scale="1 1 1"></a-entity>
                 <a-entity id="camera" position="0 1 0" camera look-controls></a-entity>
             </a-entity>
-
-<a-entity gltf-model="#city" position="-75 0 -75" rotation="0 -90 0" scale="0.01 0.01 0.01"></a-entity>
+<a-entity gltf-model="./public/media/models/backdrop/city.glb" position="-60.36 0 -75" rotation="0 -90 0"
+    scale="0.008 0.008 0.008"></a-entity>
             <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
             <a-sky color="#1c3140"></a-sky>
         </a-scene>
