@@ -12,7 +12,7 @@
 <body>
     <div id="spreadshieldIcons">
     </div>
-        <a-scene loading-screen="dotsColor: red; backgroundColor: black" reflection="directionalLight:a-light#dirlight;">
+        <a-scene loading-screen="dotsColor: gold; backgroundColor: black;" reflection="directionalLight:a-light#dirlight;">
 
 
             <a-assets>
@@ -42,15 +42,31 @@
                 
             </a-assets>
 
-            <a-entity light="angle: 80; color: #d4d4d4; intensity: 5; penumbra: 0.27; castShadow: true; shadowBias: 0.26"
+            <a-entity light="angle: 80; color: #d4d4d4; intensity: 1; penumbra: 0.27; castShadow: true; shadowBias: 0.26"
                 position="0 10 0"></a-entity>
 
-            <a-entity id="rig" position="-0.5 0 0" animation="property: position; to: 0 0 -325; dur: 30000; easing: linear; loop: true; enabled: true;">
+            <a-entity id="rig" position="-0.5 0 0" rotation="0 0 0"
+            animation="property: position; to: 0 0 -72; dur: 8000; easing: easeInQuad; loop: false; enabled: true;"
+            animation__turn_right="property: rotation; to: 0 -90 0; dur: 1000; delay: 8000; easing: easeInSine; loop: false; enabled: true;"
+            animation__right_1="property: position; from: 0 0 -72; to: 112 0 -72; dur: 5000; delay: 9000; easing: linear; loop: false; enabled: true;"
+            animation__turn_left="property: rotation; from: 0 -90 0; to: 0 0 0; dur: 1000; delay: 14000; easing: linear; loop: false; enabled: true;"
+            animation__left_1="property: position; from: 112 0 -72; to: 115 0 -115; dur: 3000; delay: 15000; easing: linear; loop: false; enabled: true;"
+            animation__turn_left_2="property: rotation; from: 0 0 0; to: 0 90 0; dur: 500; delay: 18000; easing: easeInSine; loop: false; enabled: true;"
+            animation__left_2="property: position; from: 115 0 -115; to: 60 0 -120; dur: 500; delay: 18500; easing: linear; loop: false; enabled: true;"
+            animation__turn_left_3="property: rotation; from: 0 90 0; to: 0 45 0; dur: 250; delay: 19000; easing: linear; loop: false; enabled: true;"
+            animation__left_3="property: position; from: 60 0 -120; to: 55 0 -123; dur: 500; delay: 19250; easing: linear; loop: false; enabled: true;"
+            animation__turn_left_4="property: rotation; from: 0 45 0; to: 0 70 0; dur: 250; delay: 19750; easing: linear; loop: false; enabled: true;"
+            animation__left_4="property: position; from: 55 0 -123; to: 48 0 -130; dur: 500; delay: 20000; easing: linear; loop: false; enabled: true;"
+            animation__turn_left_5="property: rotation; from: 0 70 0; to: 0 90 0; dur: 250; delay: 20500; easing: linear; loop: false; enabled: true;"
+            animation__left_5="property: position; from: 48 0 -130; to: 7 0 -134; dur: 3000; delay: 20750; easing: easeOutQuad; loop: false; enabled: true;"
+            >
                 <a-entity id="spreadshieldContainer">
-                    <a-image src="#cautionSlow" material="side: front; opacity: 0.75" geometry="" position="0.5 0.9907 -1.44041"
+                    <a-image src="#cautionSlow" material="side: front; opacity: 0.75; alphaTest: 0.5" geometry="" position="0.5 0.9907 -1.44041"
                         scale="0.15 0.15 0.15"></a-image>
-                    <a-image src="#collection1" material="side: front; opacity: 0.75" geometry="width: 2;" position="0 1 -1.5"
+                    <a-image src="#collection1" material="side: front; opacity: 0.75;" geometry="width: 2;" position="0 1 -1.5"
                         scale="0.25 0.25 0.25"></a-image>
+                    <a-image src="#mapMarkerRing" animation="property: position; to: 0.5 1 -1.5; dur: 4000; delay: 3000; easing: easeInOutQuad; dir: alternate; loop: true; enabled: true;" material="side: front; opacity: 0.75" geometry="width: 2;" position="0.8 1 -1.5"
+                        scale="0.15 0.15 0.15"></a-image>
                 </a-entity>
                 <a-light id="dirlight" intensity="0.25" light="castShadow:true;type:directional" position="1 1 1"></a-light>
 
@@ -59,7 +75,7 @@
             </a-entity>
 <a-entity gltf-model="./public/media/models/backdrop/city.glb" position="-60.36 0 -75" rotation="0 -90 0"
     scale="0.008 0.008 0.008"></a-entity>
-            <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+            <a-box position="-1 -10.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
             <a-sky color="#1c3140"></a-sky>
         </a-scene>
 
