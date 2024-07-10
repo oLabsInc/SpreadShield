@@ -4,34 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpreadShield</title>
+    <link rel="stylesheet" href="./public/style/main.css">
+    <script src="./public/logic/vr.js" defer></script>
+
+    <link rel="icon" type="image/png" href="./public/media/images/windshield-icon/logo_2a1a1a.png">
 </head>
 <body>
-    <h1>SpreadShield Demo 1</h1>
-    <h5>Things to Add:</h5>
-    <ul>
-        <li>Video Chat</li>
-        <li>Music Playlist - Interactable by both/any user in the current chat session</li>
-        <li>Video Playlist - Interactable by both/any user in the current chat session</li>
-        <li>Dynamic Map Markers</li>
-        <li>Object Detection Alert System (SOON: Motorized auto-brakes to stop for pedestrians/debri)</li>
-        <li>Hand Signal Detection & Logic for safety and service workers directing traffic manually with hand signals</li>
-        <li>Minimalist Mode - Nothing but emergency related UI events will appear on the windshield, as if there wasn't even a heads-up display installed in your car. Users can add/remove different features as well as adjust the frequency of windshield events/alerts.</li>
-        <li>Lost/Explore Mode - Get ALL the data from ALL of the locations in your current location. All a user has to do is narrow down the type of information they're looking for (phone number, hours, etc.). Users can also filter all places by type (food, entertainment, golf courses, bus stations, medical centers, religious centers, etc.)</li>
-        <li>Road Trip Mode - Drivers will get an organized piloting view with all future road trip data in view (next turn and when, current traffic, upcoming traffic, current weather, weather forecast, construction zones, overall trip map, milage tracking, current speed, current average speed of nearby vehicles for example: is the entire highway passing you while you're in lala land, we'll let you know. Alternatively, we'll let you know when you're going way too fast compared the current traffic speed and density). The front passenger has full access to WideSpread on the windshield, allowing them to do anything they can do on WideSpread with any other device with a screen(watch shows/movies in Entertainment, go to class at Academy, play an AR game, or use a seperate handheld Spread device that is hooked up to SpreadShield as the games controllers (play multiplayer with rear-seat passengers that have their seperate handheld Spread devices hooked up to the SpreadShield as well), etc.)</li>
-        <li>Security Mode - While SpreadShield vehicles are in park (), users have the option to turn on any and all cameras currently connected to their SpreadShield. This feature can be used for security reasons (surveillence system) or for social reasons (invite people to watch/experience you're current activity in 2D or 360deg)</li>
-        <li>Car Statistics and Messages from OBD
-                <ul>
-                    <li><a target="_blank" href="https://www.amazon.com/iKKEGOL-Connector-Diagnostic-Extension-Pigtail/dp/B07F16GPMB/ref=sr_1_18_sspa?crid=FDVGX67TLS3T&dib=eyJ2IjoiMSJ9.LrACwDUiEUgxB5Jzv5ArordOte-VihIxw39AjKUZ1t3WDCCa036GvH0j5BM6gLD6OBntSJrunugF-py7s6LVHwW-kaziBojtijh9e72REx7fmue9CaoCwZUYTfmmaNFH4m_genLiSdYfE-AdsNQ6StTkJVP9HN8fj_LV3aHlxXpa-wD2b5No1k_S4pCpZiiDXe8a-g4C2zPkcgijVmOKrzqpP57AjQcXme4KwIRKORM.sCY8ApbinTfhFG_3VoE9ZXucCCZb-eZMm_QQqeL3RDc&dib_tag=se&keywords=obd2%2Bcable%2Braspberry%2Bpi&qid=1720562659&sprefix=obd2%2Bcable%2Braspberry%2Bpi%2Caps%2C95&sr=8-18-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9idGY&th=1">OBD2 Male Connector Cable Wire</a></li>
-                    <li><a href="https://www.amazon.com/dp/B0D1GCWPNF/ref=sspa_dk_detail_5?pd_rd_i=B0D1GCWPNF&pd_rd_w=C5LsW&content-id=amzn1.sym.7446a9d1-25fe-4460-b135-a60336bad2c9&pf_rd_p=7446a9d1-25fe-4460-b135-a60336bad2c9&pf_rd_r=30ARD8B0PS00F78B2403&pd_rd_wg=cPtld&pd_rd_r=51b29097-1409-473d-b5ca-c05f02595536&s=automotive&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1" target="_blank">OBD2 Splitter Cable, OBD II Full 16 Pin 1 Male to Dual Female 1 to 2 T Split 2 Way Extension Converter Adapter</a></li>
-                    <li><a href="https://www.amazon.com/waveshare-10-Point-Screen-Raspberry-Interface/dp/B0CNH8H6NG/ref=sr_1_16?crid=1SGWBHE3E34BI&dib=eyJ2IjoiMSJ9.E8O6WL-h_7eud26NKm5j0dXYmi-RwgzK3Uh0otKWaFH-KcxrkrbDaPEIvQI7Rwwcw7Y6lfMEOCAJ2DJfDsI-Otw5s7TxXJV4t0nhy1gcXh2vwulw5Vr0Mm0tEiMigvq0g2c1wS2ev0a0VY4i1Mmm0UzV9FPgfsPtn2DK6c3t9EGLMFMG1eSlUyLGnALn005U0_FFSNs7WeR33hBdgFNhM6bDlQqFY6nMZDJmzAkPUVkCgbob_oSPLSXMm9FVR07Y.ONwsZu5Y1U2h80Ho2-Ny632edGbyhS8SRyZms01KsxQ&dib_tag=se&keywords=raspberry+pi+screen+10+inch&qid=1720563274&refinements=p_n_feature_fifteen_browse-bin%3A17751810011&rnid=23595186011&s=electronics&sprefix=10%22+RASP%2Celectronics%2C101&sr=1-16" target="_blank">waveshare 5inch Round LCD 1080 x 1080, IPS 10-Point Touch Screen for Raspberry Pi 4B/Raspberry Pi 3B+/Pi3B/Raspberry Pi
-                    Zero W/Zero WH/Raspberry Pi Zero 2W/Jetson Nano/PC, HDMI/USB Type-C Interface</a></li>
-                    <li><a href="https://www.amazon.com/Arducam-Raspberry-Camera-IMX519-Module/dp/B0C53BBMLG/ref=sr_1_3?crid=35Y9NSTRQOAEO&dib=eyJ2IjoiMSJ9.ywglk7L0t5-T50iylsMJBJvmoyYg1C_IFx7aQ0-QSTmNkVbAf8s3nnOW8IM4qAoVTsglFXbDfUElCBy3igvEeLl9HEaSYwD_FkYg51wyK2lfEOtvZ8r_KCyh2VSrP1e8f6C12YBGh4m0VNv9I9X3nfqHzghbMs7qqdHFmRGb7kLqrM6cSIGo3ugAGRcpscXemENX11JqsGiH9elim2RQ6So3A3TDcCM2HUxQoq2VQSFSkbfi-H_lK3giQjm1JI45qXe5_mgowfi0T9RImQ4Sh81IK64CsDEn9vWcxIrjof0.osyT_KbnWofO8TMnRfqMRhYicRgLI-jtsgvdIOJ1TVg&dib_tag=se&keywords=raspberry+pi+hd+camera&qid=1720563739&s=electronics&sprefix=raspberry+pi+hd+c%2Celectronics%2C116&sr=1-3" target="_blank">Arducam for Raspberry Pi Camera 16MP IMX519 Camera Module with 140°(D) Wide Angle M12 Lens for Raspberry Pi and OpenHD</a></li>
-                    <li><a href="https://www.amazon.com/Raspberry-Camera-Webcam-OV5647-Adjustment/dp/B08QFM8TVV/ref=sr_1_13?crid=35Y9NSTRQOAEO&dib=eyJ2IjoiMSJ9.ywglk7L0t5-T50iylsMJBJvmoyYg1C_IFx7aQ0-QSTmNkVbAf8s3nnOW8IM4qAoVTsglFXbDfUElCBy3igvEeLl9HEaSYwD_FkYg51wyK2lfEOtvZ8r_KCyh2VSrP1e8f6C12YBGh4m0VNv9I9X3nfqHzghbMs7qqdHFmRGb7kLqrM6cSIGo3ugAGRcpscXemENX11JqsGiH9elim2RQ6So3A3TDcCM2HUxQoq2VQSFSkbfi-H_lK3giQjm1JI45qXe5_mgowfi0T9RImQ4Sh81IK64CsDEn9vWcxIrjof0.osyT_KbnWofO8TMnRfqMRhYicRgLI-jtsgvdIOJ1TVg&dib_tag=se&keywords=raspberry+pi+hd+camera&qid=1720563739&s=electronics&sprefix=raspberry+pi+hd+c%2Celectronics%2C116&sr=1-13" target="_blank">Weewooday 2 Sets for Camera 1080P Webcam 5MP OV5647 Sensor Day and Night Vision IR-Cut Video Camera Focus Adjustment Compatible with Raspberry Pi RPi 4 3 B/B+ 2B 3A+ 2 1 Camera</a>
-                        <img src="./public/media/images/2d/parts/raspberry pi night-vision cameras 1.jpg" alt="Night Vision Camera Set">
-                    </li>
-                </ul>
-        </li>
 
-    </ul>
+    <div id="spreadContainer">
+        <div id="spreaData"></div>
+        <div id="spreadContent" data-content-layout="2d">
+            <div class="spread-content-header">
+                <h1>SpreadShield Demo 1</h1>
+            </div>
+            <div class="spread-content-body">
+                <div class="spread-content-body-header">
+                    <h5>Things to Add:</h5>
+                </div>
+
+                <div class="spread-content-body-data">
+
+                    <ol class="spread-content-list">
+                        <li>Video Chat</li>
+                        <li>Music Playlist - Interactable by both/any user in the current chat session</li>
+                        <li>Video Playlist - Interactable by both/any user in the current chat session</li>
+                        <li>Dynamic Map Markers</li>
+                        <li>Object Detection Alert System (SOON: Motorized auto-brakes to stop for pedestrians/debri)</li>
+                        <li>Hand Signal Detection & Logic for safety and service workers directing traffic manually with hand signals</li>
+                        <li>Minimalist Mode - Nothing but emergency related UI events will appear on the windshield, as if there wasn't even a heads-up display installed in your car. Users can add/remove different features as well as adjust the frequency of windshield events/alerts.</li>
+                        <li>Lost/Explore Mode - Get ALL the data from ALL of the locations in your current location. All a user has to do is narrow down the type of information they're looking for (phone number, hours, etc.). Users can also filter all places by type (food, entertainment, golf courses, bus stations, medical centers, religious centers, etc.)</li>
+                        <li>Road Trip Mode - Drivers will get an organized piloting view with all future road trip data in view (next turn and when, current traffic, upcoming traffic, current weather, weather forecast, construction zones, overall trip map, milage tracking, current speed, current average speed of nearby vehicles for example: is the entire highway passing you while you're in lala land, we'll let you know. Alternatively, we'll let you know when you're going way too fast compared the current traffic speed and density). The front passenger has full access to WideSpread on the windshield, allowing them to do anything they can do on WideSpread with any other device with a screen(watch shows/movies in Entertainment, go to class at Academy, play an AR game, or use a seperate handheld Spread device that is hooked up to SpreadShield as the games controllers (play multiplayer with rear-seat passengers that have their seperate handheld Spread devices hooked up to the SpreadShield as well), etc.)</li>
+                        <li>Security Mode - While SpreadShield vehicles are in park (), users have the option to turn on any and all cameras currently connected to their SpreadShield. This feature can be used for security reasons (surveillence system) or for social reasons (invite people to watch/experience you're current activity in 2D or 360deg)</li>
+                        <li>Car Statistics and Messages from OBD
+                                <ul class="spread-content-list-2">
+                                    <li><a target="_blank" href="https://www.amazon.com/iKKEGOL-Connector-Diagnostic-Extension-Pigtail/dp/B07F16GPMB/ref=sr_1_18_sspa?crid=FDVGX67TLS3T&dib=eyJ2IjoiMSJ9.LrACwDUiEUgxB5Jzv5ArordOte-VihIxw39AjKUZ1t3WDCCa036GvH0j5BM6gLD6OBntSJrunugF-py7s6LVHwW-kaziBojtijh9e72REx7fmue9CaoCwZUYTfmmaNFH4m_genLiSdYfE-AdsNQ6StTkJVP9HN8fj_LV3aHlxXpa-wD2b5No1k_S4pCpZiiDXe8a-g4C2zPkcgijVmOKrzqpP57AjQcXme4KwIRKORM.sCY8ApbinTfhFG_3VoE9ZXucCCZb-eZMm_QQqeL3RDc&dib_tag=se&keywords=obd2%2Bcable%2Braspberry%2Bpi&qid=1720562659&sprefix=obd2%2Bcable%2Braspberry%2Bpi%2Caps%2C95&sr=8-18-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9idGY&th=1">OBD2 Male Connector Cable Wire</a>
+                                        <img src="./public/media/images/2d/parts/raspberry pi night-vision cameras 2.jpg" alt="Night Vision Camera Details">
+                                    </li>
+                                    <li><a href="https://www.amazon.com/dp/B0D1GCWPNF/ref=sspa_dk_detail_5?pd_rd_i=B0D1GCWPNF&pd_rd_w=C5LsW&content-id=amzn1.sym.7446a9d1-25fe-4460-b135-a60336bad2c9&pf_rd_p=7446a9d1-25fe-4460-b135-a60336bad2c9&pf_rd_r=30ARD8B0PS00F78B2403&pd_rd_wg=cPtld&pd_rd_r=51b29097-1409-473d-b5ca-c05f02595536&s=automotive&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1" target="_blank">OBD2 Splitter Cable, OBD II Full 16 Pin 1 Male to Dual Female 1 to 2 T Split 2 Way Extension Converter Adapter</a>
+                                        <img src="./public/media/images/2d/parts/obd2 Splitter Coupling 1-Male 2-Female __ 2.jpg" alt="OBD2 Splitter">
+                                    </li>
+                                    <li><a href="https://www.amazon.com/waveshare-10-Point-Screen-Raspberry-Interface/dp/B0CNH8H6NG/ref=sr_1_16?crid=1SGWBHE3E34BI&dib=eyJ2IjoiMSJ9.E8O6WL-h_7eud26NKm5j0dXYmi-RwgzK3Uh0otKWaFH-KcxrkrbDaPEIvQI7Rwwcw7Y6lfMEOCAJ2DJfDsI-Otw5s7TxXJV4t0nhy1gcXh2vwulw5Vr0Mm0tEiMigvq0g2c1wS2ev0a0VY4i1Mmm0UzV9FPgfsPtn2DK6c3t9EGLMFMG1eSlUyLGnALn005U0_FFSNs7WeR33hBdgFNhM6bDlQqFY6nMZDJmzAkPUVkCgbob_oSPLSXMm9FVR07Y.ONwsZu5Y1U2h80Ho2-Ny632edGbyhS8SRyZms01KsxQ&dib_tag=se&keywords=raspberry+pi+screen+10+inch&qid=1720563274&refinements=p_n_feature_fifteen_browse-bin%3A17751810011&rnid=23595186011&s=electronics&sprefix=10%22+RASP%2Celectronics%2C101&sr=1-16" target="_blank">waveshare 5inch Round LCD 1080 x 1080, IPS 10-Point Touch Screen for Raspberry Pi 4B/Raspberry Pi 3B+/Pi3B/Raspberry Pi
+                                    Zero W/Zero WH/Raspberry Pi Zero 2W/Jetson Nano/PC, HDMI/USB Type-C Interface</a>
+                                        <img src="./public/media/images/2d/parts/windshield touchscreen circle 4.jpg" alt="5 inch Circular Touchscreen">
+                                </li>
+                                    <li><a href="https://www.amazon.com/Arducam-Raspberry-Camera-IMX519-Module/dp/B0C53BBMLG/ref=sr_1_3?crid=35Y9NSTRQOAEO&dib=eyJ2IjoiMSJ9.ywglk7L0t5-T50iylsMJBJvmoyYg1C_IFx7aQ0-QSTmNkVbAf8s3nnOW8IM4qAoVTsglFXbDfUElCBy3igvEeLl9HEaSYwD_FkYg51wyK2lfEOtvZ8r_KCyh2VSrP1e8f6C12YBGh4m0VNv9I9X3nfqHzghbMs7qqdHFmRGb7kLqrM6cSIGo3ugAGRcpscXemENX11JqsGiH9elim2RQ6So3A3TDcCM2HUxQoq2VQSFSkbfi-H_lK3giQjm1JI45qXe5_mgowfi0T9RImQ4Sh81IK64CsDEn9vWcxIrjof0.osyT_KbnWofO8TMnRfqMRhYicRgLI-jtsgvdIOJ1TVg&dib_tag=se&keywords=raspberry+pi+hd+camera&qid=1720563739&s=electronics&sprefix=raspberry+pi+hd+c%2Celectronics%2C116&sr=1-3" target="_blank">Arducam for Raspberry Pi Camera 16MP IMX519 Camera Module with 140°(D) Wide Angle M12 Lens for Raspberry Pi and OpenHD</a>
+                                        <img src="./public/media/images/2d/parts/raspberry pi hd camera 1.jpg" alt="HD Camera">
+                                    </li>
+                                    <li><a href="https://www.amazon.com/Raspberry-Camera-Webcam-OV5647-Adjustment/dp/B08QFM8TVV/ref=sr_1_13?crid=35Y9NSTRQOAEO&dib=eyJ2IjoiMSJ9.ywglk7L0t5-T50iylsMJBJvmoyYg1C_IFx7aQ0-QSTmNkVbAf8s3nnOW8IM4qAoVTsglFXbDfUElCBy3igvEeLl9HEaSYwD_FkYg51wyK2lfEOtvZ8r_KCyh2VSrP1e8f6C12YBGh4m0VNv9I9X3nfqHzghbMs7qqdHFmRGb7kLqrM6cSIGo3ugAGRcpscXemENX11JqsGiH9elim2RQ6So3A3TDcCM2HUxQoq2VQSFSkbfi-H_lK3giQjm1JI45qXe5_mgowfi0T9RImQ4Sh81IK64CsDEn9vWcxIrjof0.osyT_KbnWofO8TMnRfqMRhYicRgLI-jtsgvdIOJ1TVg&dib_tag=se&keywords=raspberry+pi+hd+camera&qid=1720563739&s=electronics&sprefix=raspberry+pi+hd+c%2Celectronics%2C116&sr=1-13" target="_blank">Weewooday 2 Sets for Camera 1080P Webcam 5MP OV5647 Sensor Day and Night Vision IR-Cut Video Camera Focus Adjustment Compatible with Raspberry Pi RPi 4 3 B/B+ 2B 3A+ 2 1 Camera</a>
+                                        <img src="./public/media/images/2d/parts/raspberry pi night-vision cameras 1.jpg" alt="Night Vision Camera Set">
+                                    </li>
+                                </ul>
+                        </li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
 </body>
 </html>
