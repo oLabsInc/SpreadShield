@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #000;
+}
+
+
+#spreadShieldContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    border-radius: 2rem;
+    /* background-color: aqua; */
+    color: #fff;
+    box-shadow: inset 0 0 150px 25px #000;
+}
+
+#wsLogo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    max-width: 25vw;
+    max-height: 25vh;
+    z-index: -50000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#wsLogo img {
+    max-width: 100%;
+    max-height: 100%;
+    /* filter: drop-shadow(0 0 4px lightskyblue) contrast(120%) brightness(75%) saturate(200%) hue-rotate(0deg); */
+    /* filter: drop-shadow(0 0 4px lightskyblue) contrast(80%) brightness(75%) saturate(50%) hue-rotate(0deg); */
+    opacity: 0.5;
+    transition: ease-in-out 500ms;
+    animation-name: colorpulse;
+    animation-duration: 100000ms;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    user-select: none;
+    pointer-events: none;
+    
+}
+
+
+
+
+
+#spreadshieldCorePrimaryMenu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    z-index: 90001;
+}
+
+#spreadshieldCorePrimaryMenu::before {
+    content: '';
+    width: 200vw;
+    height: 20vh;
+    background-color: #1c1c1ca9;
+    position: fixed;
+    bottom: -10vh;
+    border-radius: 50%;
+    left: -50vw;
+    box-shadow: 0 0 30px lightskyblue;
+    right: 0;
+    animation-name: colorpulse;
+    animation-duration: 100000ms;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    opacity: 0.5;
+    backdrop-filter: blur(10px);
+    z-index: 80000;
+}
+#spreadshieldCorePrimaryMenu>span, #spreadshieldCoreSecondaryMenu>span {
+    position: relative;
+    z-index: 99955;
+}
+#spreadshieldCoreSecondaryMenu {
+    position: fixed;
+    top: -14vh;
+    left: -2.5vw;
+    right: 0;
+    height: 18vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    z-index: 91000;
+}
+
+#spreadshieldCoreSecondaryMenu::before {
+    content: '';
+    width: 200vw;
+    height: 20vh;
+    background-color: #1c1c1ca9;
+    position: fixed;
+    top: -14vh;
+    border-radius: 50%;
+    left: -50vw;
+    box-shadow: 0 0 30px lightskyblue, inset 0 -20px 22px 6px #000;
+    border-bottom: solid 4px #111;
+    right: 0;
+    animation-name: colorpulse;
+    animation-duration: 100000ms;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    opacity: 0.5;
+    backdrop-filter: blur(10px);
+}
+
+
+
+
+
+#spreadshieldAppContainer {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    bottom: 15vh;
+    background-color: transparent;
+    z-index: -1000;
+    /* border: solid 1px lime; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 2.5rem;
+    padding: 2.5rem;
+    opacity: 0;
+}
+#spreadshieldAppContainer span {
+    width: 250px;
+    height: 250px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px lightskyblue;
+}
+
+h6 {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #000;
+    text-shadow: 0 0 2px lightskyblue;
+    letter-spacing: 0.25rem;
+}
+
+@keyframes colorpulse {
+    0% {
+        filter: drop-shadow(0 0 14px rgba(135, 206, 250, 0.25)) contrast(80%) brightness(100%) saturate(200%) hue-rotate(0deg);
+    }
+
+    25% {
+        filter: drop-shadow(0 0 14px rgba(135, 206, 250, 0.25)) contrast(80%) brightness(100%) saturate(200%) hue-rotate(90deg);
+    }
+    
+    50% {
+        filter: drop-shadow(0 0 14px rgba(135, 206, 250, 0.25)) contrast(80%) brightness(100%) saturate(200%) hue-rotate(180deg);
+    }
+    
+    100% {
+        filter: drop-shadow(0 0 14px rgba(135, 206, 250, 0.25)) contrast(80%) brightness(100%) saturate(200%) hue-rotate(360deg);
+    }
+}
