@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WideSpread VR Dining Room</title>
+    <link rel="icon" type="image/png" href="./public/media/images/windshield-icon/logo_2a1a1a.png">
+
+    <link rel="stylesheet" href="https://use.typekit.net/eny2fmh.css">
+    <link rel="stylesheet" href="./public/style/oe.css">
+    <link rel="stylesheet" href="./public/style/spreadshield.css">
+    <script src="./public/logic/main.js" defer></script>
+    <script src="./public/logic/icons.js"></script>
+    <link rel="stylesheet" href="./public/style/spreadshield.css">
+    <script src="./public/logic/spreadshield.js" defer></script>
+
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+</head>
+<body>
+
+    <!-- VR Container -->
+     <div id="vrContainer">
+        <a-scene>
+            <a-assets>
+                <a-asset-item id="lambo" src="./public/media/models/vehicle/lambo.glb"></a-asset-item>
+                <a-asset-item id="lambo2" src="./public/media/models/vehicle/lambo_2.glb"></a-asset-item>
+                <a-asset-item id="room" src="./public/media/models/backdrop/modern_dining_room.glb"></a-asset-item>
+                <a-asset-item id="tower" src="./public/media/models/backdrop/modern_tower_office_apartment_house_home.glb"></a-asset-item>
+            </a-assets>
+
+            <a-entity id="mainVrBackdrop" position="0 0 -7.5" rotation="" scale="5 5 5">
+                <a-gltf-model src="#room"></a-gltf-model>
+            </a-entity>
+
+            <a-entity id="towerEl" position="0 -160.80945 63.26241" rotation="" scale="5 5 5">
+                <a-gltf-model src="#tower"></a-gltf-model>
+            </a-entity>
+
+
+
+            <a-sky color="#111"></a-sky>
+        </a-scene>
+     </div>
+
+
+
+     <!-- WideSpread Logo -->
+      <div id="backgroundAudio">
+        <audio id="backgroundAudioPlayer" src="./public/media/audio/city-night-square_1a1a1a.mp3"></audio>
+      </div>
+
+    <div id="vrCurtain">
+        <div class="vr-curtain-data">
+            <p style="font-family: 'Abnes'">Tap anywhere to enter WideSpreads Digital Reality</p>
+        </div>
+    </div>
+
+
+      <div id="wsLogoCover"></div>
+      <div id="wsLogo">
+         <img draggable="false" src="./public/media/images/windshield-icon/logo_2a1a1a.png" alt="WideSpread Logo">
+      </div>
+
+
+
+
+        <!-- This is the windshields lower and primary main menu (always fixed to the bottom of the windshield & touchscreen) -->
+        <div id="spreadshieldCorePrimaryMenu">
+            <!-- <span>Primary Menu</span> -->
+
+        </div>
+
+        <!-- This is the windshields upper and secondary main menu (always fixed to the top of the windshield & touchscreen, replacing the rear-view mirrors real estate) -->
+        <div id="spreadshieldCoreSecondaryMenu">
+            <!-- <span>Secondary Menu</span> -->
+        </div>
+    <div id="spreadShieldContainer" style="user-select: none; pointer-events: none;">
+
+
+        <!-- This is where we bring in all of the windshield UI elements -->
+        <div id="spreadshieldAppContainer">
+            <span>App 1</span>
+            <span>App 2</span>
+            <span>App 3</span>
+            <span>App 4</span>
+            <span>App 5</span>
+        </div>
+
+    </div>
+
+    <!-- Current Pointer Location -->
+     <div id="pointerLocation" data-color="rgba(0, 255, 255, 0.5)">
+        <div id="pointerLocationDot">
+        </div>
+        <!-- <div class="trail">
+            <div class="pointer"></div>
+            <div class="pointer2"></div>
+            <div class="pointer3"></div>
+            <div class="pointer4"></div>
+            <div class="pointer5"></div>
+        </div> -->
+     </div>
+
+
+    <div id="fullscreenToggle">
+        <img id="fullscreenBtn" src="./public/media/images/system/view-expand.png" alt="Fullscreen Icon">
+        <img id="exitFullscreenBtn" class="hidden" src="./public/media/images/system/view-collapse.png"
+            alt="Exit Fullscreen Icon">
+    </div>
+
+    <script>
+        const
+            fullscreenToggle = document.getElementById('fullscreenToggle'),
+            fullscreenBtn = document.getElementById('fullscreenBtn'),
+            exitFullscreenBtn = document.getElementById('exitFullscreenBtn')
+
+        fullscreenBtn.addEventListener('click', e => {
+            document.documentElement.requestFullscreen().catch((e) => {
+                console.log(e)
+            })
+            fullscreenBtn.classList.toggle('hidden')
+            exitFullscreenBtn.classList.toggle('hidden')
+        })
+        exitFullscreenBtn.addEventListener('click', e => {
+            document.exitFullscreen()
+            fullscreenBtn.classList.toggle('hidden')
+            exitFullscreenBtn.classList.toggle('hidden')
+        })
+    </script>
+
+
+    <script>
+        const
+            backgroundAudioPlayer = document.getElementById('backgroundAudioPlayer'),
+            vrCurtain = document.getElementById('vrCurtain'),
+            wsLogo = document.getElementById('wsLogo'),
+            wsLogoCover = document.getElementById('wsLogoCover')
+
+        document.addEventListener('click', e => {
+            console.log('click')
+            console.log(backgroundAudioPlayer)
+            // backgroundAudioPlayer.play()
+            wsLogo.style.opacity = 0
+            vrCurtain.style.opacity = 0
+            if (backgroundAudioPlayer.paused = false) {
+                console.log('paused')
+            }
+        })
+    </script>
+</body>
+</html>
