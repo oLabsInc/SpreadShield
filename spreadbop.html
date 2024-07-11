@@ -13,13 +13,59 @@
     <script src="./public/logic/icons.js"></script>
     <link rel="stylesheet" href="./public/style/spreadshield.css">
     <script src="./public/logic/spreadshield.js" defer></script>
+
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
 </head>
 <body>
-    <div id="spreadShieldContainer">
-        <!-- WideSpread Logo -->
-         <div id="wsLogo">
-            <img draggable="false" src="./public/media/images/windshield-icon/logo_2a1a1a.png" alt="WideSpread Logo">
-         </div>
+
+    <!-- VR Container -->
+     <div id="vrContainer">
+        <a-scene>
+            <a-assets>
+                <a-asset-item id="lambo" src="./public/media/models/vehicle/lambo.glb"></a-asset-item>
+                <a-asset-item id="lambo2" src="./public/media/models/vehicle/lambo_2.glb"></a-asset-item>
+                <a-asset-item id="city3" src="./public/media/models/backdrop/city.glb"></a-asset-item>
+            </a-assets>
+
+            <a-entity id="lamboContainer" position="-5 0.144 -6" rotation="0 65 0">
+                <a-gltf-model src="#lambo"></a-gltf-model>
+            </a-entity>
+
+            <a-entity id="lamboContainer2" position="5 0.144 -6" rotation="0 -95 0">
+                <a-gltf-model src="#lambo2"></a-gltf-model>
+            </a-entity>
+            
+            <a-entity id="mainVrBackdrop" position="52.64403 0 50.87353" rotation="" scale="0.01 0.01 0.01">
+                <a-gltf-model src="#city3"></a-gltf-model>
+            </a-entity>
+
+
+            <a-plane position="0 -1 -4" rotation="-90 0 0" width="40" height="40" color="#000"></a-plane>
+            <a-sky color="#111"></a-sky>
+        </a-scene>
+     </div>
+
+
+
+     <!-- WideSpread Logo -->
+      <div id="backgroundAudio">
+        <audio id="backgroundAudioPlayer" src="./public/media/audio/city-night-square_1a1a1a.mp3"></audio>
+      </div>
+
+    <div id="vrCurtain">
+        <div class="vr-curtain-data">
+            <p style="font-family: 'Abnes'">Tap anywhere to enter WideSpreads Digital Reality</p>
+        </div>
+    </div>
+
+
+      <div id="wsLogoCover"></div>
+      <div id="wsLogo">
+         <img draggable="false" src="./public/media/images/windshield-icon/logo_2a1a1a.png" alt="WideSpread Logo">
+      </div>
+
+
+
 
         <!-- This is the windshields lower and primary main menu (always fixed to the bottom of the windshield & touchscreen) -->
         <div id="spreadshieldCorePrimaryMenu">
@@ -31,6 +77,8 @@
         <div id="spreadshieldCoreSecondaryMenu">
             <!-- <span>Secondary Menu</span> -->
         </div>
+    <div id="spreadShieldContainer" style="user-select: none; pointer-events: none;">
+
 
         <!-- This is where we bring in all of the windshield UI elements -->
         <div id="spreadshieldAppContainer">
@@ -56,6 +104,7 @@
         </div> -->
      </div>
 
+
     <div id="fullscreenToggle">
         <img id="fullscreenBtn" src="./public/media/images/system/view-expand.png" alt="Fullscreen Icon">
         <img id="exitFullscreenBtn" class="hidden" src="./public/media/images/system/view-collapse.png"
@@ -79,6 +128,26 @@
             document.exitFullscreen()
             fullscreenBtn.classList.toggle('hidden')
             exitFullscreenBtn.classList.toggle('hidden')
+        })
+    </script>
+
+
+    <script>
+        const
+            backgroundAudioPlayer = document.getElementById('backgroundAudioPlayer'),
+            vrCurtain = document.getElementById('vrCurtain'),
+            wsLogo = document.getElementById('wsLogo'),
+            wsLogoCover = document.getElementById('wsLogoCover')
+
+        document.addEventListener('click', e => {
+            console.log('click')
+            console.log(backgroundAudioPlayer)
+            backgroundAudioPlayer.play()
+            wsLogo.style.opacity = 0
+            vrCurtain.style.opacity = 0
+            if (backgroundAudioPlayer.paused = false) {
+                console.log('paused')
+            }
         })
     </script>
 </body>

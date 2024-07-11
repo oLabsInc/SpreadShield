@@ -101,6 +101,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 99999;
 }
 #fullscreenToggle img {
     max-width: 100%;
@@ -612,6 +613,7 @@ body {
 }
 
 .page-section-header {
+    margin-bottom: 1rem;
 }
 .page-section-header h3 {
     text-align: center;

@@ -73,7 +73,7 @@
 
         if (event.pageY >=  primaryMenuElHeight){
             console.log('hovering menu')
-            spreadshieldCorePrimaryMenu.style.borderBottom = 'solid 5px lightskyblue'
+            spreadshieldCorePrimaryMenu.style.borderBottom = 'solid 5px transparent'
         } else {
             spreadshieldCorePrimaryMenu.style.borderBottom = 'solid 5px transparent'
 

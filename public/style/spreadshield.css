@@ -6,7 +6,7 @@
 
 html {
     background-color: #000;
-    cursor: none;
+    cursor: crosshair;
     max-width: 100vw;
     max-height: 100vh;
     overflow: hidden;
@@ -65,6 +65,23 @@ html {
     overflow: hidden;
 }
 
+#wsLogoCover {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    max-width: 25vw;
+    max-height: 25vh;
+    z-index: 50010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    user-select: none;
+    pointer-events: none;
+}
 #wsLogo {
     position: fixed;
     top: 50%;
@@ -74,17 +91,20 @@ html {
     height: 200px;
     max-width: 25vw;
     max-height: 25vh;
-    z-index: -50000;
+    z-index: 50000;
     display: flex;
     align-items: center;
     justify-content: center;
+    user-select: none;
+    pointer-events: none;
+    transition: ease-in-out 5000ms;
 }
 #wsLogo img {
     max-width: 100%;
     max-height: 100%;
     /* filter: drop-shadow(0 0 4px lightskyblue) contrast(120%) brightness(75%) saturate(200%) hue-rotate(0deg); */
     /* filter: drop-shadow(0 0 4px lightskyblue) contrast(80%) brightness(75%) saturate(50%) hue-rotate(0deg); */
-    opacity: 0.25;
+    opacity: 0.5;
     transition: ease-in-out 500ms;
     animation-name: colorpulse;
     animation-duration: 50000ms;
@@ -93,10 +113,50 @@ html {
     animation-iteration-count: infinite;
     user-select: none;
     pointer-events: none;
+    transition: ease-in-out 2000ms;
     
 }
 
 
+#vrContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    z-index: 1;
+}
+#vrCurtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #222;
+    opacity: 1;
+    box-shadow: inset 0 0 300px #000;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 5000ms;
+    user-select: none;
+    pointer-events: none;
+}
+.vr-curtain-data {
+    margin-top: 40vh;
+    letter-spacing: 0.3rem;
+    color: rgb(7, 212, 255);
+    text-shadow: 0 1px 3px #ffffff8c;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.2rem;
+    font-weight: 100;
+    transition: ease-in-out 5000;
+}
 
 
 
@@ -231,6 +291,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 99000;
 }
 
 
@@ -253,17 +314,16 @@ h6 {
 @keyframes colorpulse {
     0% {
         filter: drop-shadow(0 0 14px rgba(135, 206, 250, 0.25)) contrast(80%) brightness(100%) saturate(200%) hue-rotate(0deg);
-    }
-
-    25% {
-        filter: drop-shadow(0 0 14px rgba(135, 206, 250, 0.25)) contrast(120%) brightness(80%) saturate(200%) hue-rotate(90deg);
+        opacity: 0.75;
     }
     
     50% {
         filter: drop-shadow(0 0 14px rgba(135, 206, 250, 0.25)) contrast(80%) brightness(150%) saturate(200%) hue-rotate(180deg);
+        opacity: 0.15;
     }
     
     100% {
         filter: drop-shadow(0 0 14px rgba(135, 206, 250, 0.25)) contrast(80%) brightness(100%) saturate(200%) hue-rotate(360deg);
+        opacity: 0.75;
     }
 }
