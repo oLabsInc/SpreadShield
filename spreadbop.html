@@ -6,6 +6,11 @@
     <title>SpreadShield</title>
     <link rel="icon" type="image/png" href="./public/media/images/windshield-icon/logo_2a1a1a.png">
 
+    <link rel="stylesheet" href="https://use.typekit.net/eny2fmh.css">
+    <link rel="stylesheet" href="./public/style/oe.css">
+    <link rel="stylesheet" href="./public/style/spreadshield.css">
+    <script src="./public/logic/main.js" defer></script>
+    <script src="./public/logic/icons.js"></script>
     <link rel="stylesheet" href="./public/style/spreadshield.css">
     <script src="./public/logic/spreadshield.js" defer></script>
 </head>
@@ -25,7 +30,6 @@
         <!-- This is the windshields upper and secondary main menu (always fixed to the top of the windshield & touchscreen, replacing the rear-view mirrors real estate) -->
         <div id="spreadshieldCoreSecondaryMenu">
             <!-- <span>Secondary Menu</span> -->
-             <h6>SpreadShield</h6>
         </div>
 
         <!-- This is where we bring in all of the windshield UI elements -->
@@ -51,5 +55,31 @@
             <div class="pointer5"></div>
         </div> -->
      </div>
+
+    <div id="fullscreenToggle">
+        <img id="fullscreenBtn" src="./public/media/images/system/view-expand.png" alt="Fullscreen Icon">
+        <img id="exitFullscreenBtn" class="hidden" src="./public/media/images/system/view-collapse.png"
+            alt="Exit Fullscreen Icon">
+    </div>
+
+    <script>
+        const
+            fullscreenToggle = document.getElementById('fullscreenToggle'),
+            fullscreenBtn = document.getElementById('fullscreenBtn'),
+            exitFullscreenBtn = document.getElementById('exitFullscreenBtn')
+
+        fullscreenBtn.addEventListener('click', e => {
+            document.documentElement.requestFullscreen().catch((e) => {
+                console.log(e)
+            })
+            fullscreenBtn.classList.toggle('hidden')
+            exitFullscreenBtn.classList.toggle('hidden')
+        })
+        exitFullscreenBtn.addEventListener('click', e => {
+            document.exitFullscreen()
+            fullscreenBtn.classList.toggle('hidden')
+            exitFullscreenBtn.classList.toggle('hidden')
+        })
+    </script>
 </body>
 </html>
