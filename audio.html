@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WideSpread VR Dining Room</title>
+    <link rel="icon" type="image/png" href="./public/media/images/windshield-icon/logo_2a1a1a.png">
+
+    <link rel="stylesheet" href="https://use.typekit.net/eny2fmh.css">
+    <link rel="stylesheet" href="./public/style/oe.css">
+    <link rel="stylesheet" href="./public/style/spreadshield.css">
+    <script src="./public/logic/main.js" defer></script>
+    <script src="./public/logic/icons.js"></script>
+    <link rel="stylesheet" href="./public/style/spreadshield.css">
+    <script src="./public/logic/spreadshield.js" defer></script>
+
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+
+
+    <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script>
+
+
+</head>
+<body>
+
+    <!-- VR Container -->
+     <div id="vrContainer">
+        <a-scene renderer="antialias: true;
+                   colorManagement: true;
+                   sortObjects: true;
+                   physicallyCorrectLights: true;"
+                   xr-mode-ui="false">
+            <a-assets>
+                <a-asset-item id="spreadMenu" src="./public/media/models/system/vr-spread-menu_1a1a1a.gltf"></a-asset-item>
+                <audio id="song" src="./public/media/audio/lightitup.wav" autoplay loop></audio>
+                <img id="universe" src="./public/media/images/360/universe.jpg" alt="">
+            </a-assets>
+
+
+
+            <a-entity id="spreadMenuVr" position="0 -2 0" rotation="0 0 0" scale="1 1 1" animation="property: rotation; from: 0 0 0; to: 270 90 270; dur: 5000; easing: linear; loop: false">
+                <a-light type="point" id="spreadMenuLight" color="lime" light="color: #00fffb; intensity: 1.69; type: point; castShadow: true" position="0 0 1.06082"></a-light>
+                <a-gltf-model src="#spreadMenu" position="0 0 0" scale="1 1 1" material="metalness: 1; transparent: true; opacity: 0.5;"></a-gltf-model>
+            </a-entity>
+            <a-light type="point" position="0 30.25241 0" light="angle: 80; color: #ffffff; decay: 0.27; intensity: 1; penumbra: 0.16; type: point; castShadow: true"></a-light>
+
+            <a-light type="spot" position="0 5.82102 -0.0678" light="angle: 153.03; color: #435970; groundColor: #ffffff; decay: 1.77; distance: 0.25; intensity: 1.3; penumbra: 0.85; type: directional; castShadow: true; shadowBias: 0.56" visible=""></a-light>
+            
+
+
+
+
+
+            <a-sky src="#universe" meterial="opacity: 0.25"></a-sky>
+
+            <a-entity id="rig" camera look-controls wasd-controls rotation-reader position="0 1.6 0">
+            </a-entity>
+        </a-scene>
+     </div>
+
+
+
+     <!-- WideSpread Logo -->
+      <div id="backgroundAudio">
+        <!-- <audio id="backgroundAudioPlayer" src="./public/media/audio/city-night-square_1a1a1a.mp3"></audio> -->
+      </div>
+
+    <div id="vrCurtain">
+        <div class="vr-curtain-data">
+            <p style="font-family: 'Abnes'">Tap anywhere to enter WideSpreads Digital Reality</p>
+        </div>
+    </div>
+
+
+      <div id="wsLogoCover"></div>
+      <div id="wsLogo">
+         <img draggable="false" src="./public/media/images/windshield-icon/logo_2a1a1a.png" alt="WideSpread Logo">
+      </div>
+
+
+
+
+        <!-- This is the windshields lower and primary main menu (always fixed to the bottom of the windshield & touchscreen) -->
+        <div id="spreadshieldCorePrimaryMenu">
+            <!-- <span>Primary Menu</span> -->
+
+        </div>
+
+        <!-- This is the windshields upper and secondary main menu (always fixed to the top of the windshield & touchscreen, replacing the rear-view mirrors real estate) -->
+        <div id="spreadshieldCoreSecondaryMenu">
+            <!-- <span>Secondary Menu</span> -->
+        </div>
+    <div id="spreadShieldContainer" style="user-select: none; pointer-events: none;">
+
+
+        <!-- This is where we bring in all of the windshield UI elements -->
+        <div id="spreadshieldAppContainer">
+            <span>App 1</span>
+            <span>App 2</span>
+            <span>App 3</span>
+            <span>App 4</span>
+            <span>App 5</span>
+        </div>
+
+    </div>
+
+    <!-- Current Pointer Location -->
+     <div id="pointerLocation" data-color="rgba(0, 255, 255, 0.5)">
+        <div id="pointerLocationDot">
+        </div>
+        <!-- <div class="trail">
+            <div class="pointer"></div>
+            <div class="pointer2"></div>
+            <div class="pointer3"></div>
+            <div class="pointer4"></div>
+            <div class="pointer5"></div>
+        </div> -->
+     </div>
+
+
+    <div id="fullscreenToggle">
+        <img id="fullscreenBtn" src="./public/media/images/system/view-expand.png" alt="Fullscreen Icon">
+        <img id="exitFullscreenBtn" class="hidden" src="./public/media/images/system/view-collapse.png"
+            alt="Exit Fullscreen Icon">
+    </div>
+
+    <script>
+        const
+            fullscreenToggle = document.getElementById('fullscreenToggle'),
+            fullscreenBtn = document.getElementById('fullscreenBtn'),
+            exitFullscreenBtn = document.getElementById('exitFullscreenBtn')
+
+        fullscreenBtn.addEventListener('click', e => {
+            document.documentElement.requestFullscreen().catch((e) => {
+                console.log(e)
+            })
+            fullscreenBtn.classList.toggle('hidden')
+            exitFullscreenBtn.classList.toggle('hidden')
+        })
+        exitFullscreenBtn.addEventListener('click', e => {
+            document.exitFullscreen()
+            fullscreenBtn.classList.toggle('hidden')
+            exitFullscreenBtn.classList.toggle('hidden')
+        })
+    </script>
+
+
+    <script>
+        const
+            backgroundAudioPlayer = document.getElementById('backgroundAudioPlayer'),
+            vrCurtain = document.getElementById('vrCurtain'),
+            wsLogo = document.getElementById('wsLogo'),
+            wsLogoCover = document.getElementById('wsLogoCover')
+
+        document.addEventListener('click', e => {
+            console.log('click')
+            console.log(backgroundAudioPlayer)
+            // backgroundAudioPlayer.play()
+            wsLogo.style.opacity = 0
+            vrCurtain.style.opacity = 0
+            if (backgroundAudioPlayer.paused = false) {
+                console.log('paused')
+            }
+        })
+    </script>
+
+
+    <script>
+        const
+            scenic = document.querySelector('a-scene'),
+            spreadMenuVr = document.getElementById('spreadMenuVr')
+
+        scenic.addEventListener('click', e => {
+
+            const
+                rig = scenic.querySelector('#rig'),
+                camPos = scenic.camera.el.object3D.position;
+                camRotate = scenic.camera.el.object3D.rotation;
+
+            console.log(rig)
+            const camLoc = {
+                x: camPos.x,
+                y: camPos.y,
+                z: camPos.z
+            }
+            const camRot = {
+                x: camRotate.x,
+                y: camRotate.y,
+                z: camRotate.z
+            }
+            console.log(`camRot x: ${camRot.x}`)
+            console.log(`camRot y: ${camRot.y}`)
+            console.log(`camRot z: ${camRot.z}`)
+
+            spreadMenuVr.setAttribute('position', { x: camLoc.x, y: -1, z: camLoc.z });
+            spreadMenuVr.setAttribute('rotation', { x: -90, y: (camRot.y * 57.29578), z: 0 });
+        })
+    </script>
+
+
+    <script>
+        AFRAME.registerComponent('rotation-reader', {
+            tick: function () {
+                // `this.el` is the element.
+                // `object3D` is the three.js object.
+
+                // `rotation` is a three.js Euler using radians. `quaternion` also available.
+                console.log('this.el.object3D.rotation');
+                console.log(this.el.object3D.rotation.y);
+
+                // `position` is a three.js Vector3.
+                console.log(this.el.object3D.position);
+            }
+        });
+    </script>
+</body>
+</html>
