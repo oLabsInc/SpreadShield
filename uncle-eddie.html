@@ -51,16 +51,21 @@
                 <a-asset-item id="lambo1" src="./public/media/models/vehicle/lamborgini_revuelto_1a1a1a.glb"></a-asset-item>
                 <a-asset-item id="vrBackdrop" src="./public/media/models/backdrop/studio_v1_for_car_2k.glb"></a-asset-item>
                 <a-asset-item id="spreadMenu" src="./public/media/models/system/vr-spread-menu_1a1a1a.gltf"></a-asset-item>
+                <a-asset-item id="warehouse" src="./public/media/models/backdrop/warehouse_8k.glb"></a-asset-item>
                 <audio id="song" src="./public/media/audio/lightitup.wav" loop></audio>
                 <img id="universe" src="./public/media/images/360/universe.jpg" alt="">
             </a-assets>
 
 
 
-            <a-entity id="lambo1El" position="0 0 -20" rotation="0 90 0" scale="1 1 1" animation="property: position; from: 0 0 -20; to: 0 0 -5; dur: 8000; easing: easeInOutCubic; delay: 2000; dir: alternate; loop: true;">
+            <a-entity id="lambo1El" position="0 0 -20" rotation="0 90 0" scale="1 1 1" animation="property: position; from: 0 0 -20; to: 0 0 -5; dur: 8000; easing: easeInCubic; delay: 2000; loop: false;">
                 <a-light type="spot" id="lamboLightSpot" light="color: #00fffb; intensity: 0.3; type: spot; castShadow: true" position="0 2 0" animation="property: light.intensity; from: 0.3; to: 1.0; dur: 5000; dir: alternate; easing: easeInOutElastic; elasticity: 1200; loop: true;"></a-light>
                 <a-light type="point" id="lamboLightPoint" light="color: #00fffb; intensity: 0.1; type: point; castShadow: true" position="0 2 0" animation="property: light.intensity; from: 0.1; to: 0.8; dur: 5000; dir: alternate; easing: easeInOutElastic; elasticity: 1200; loop: true;"></a-light>
                 <a-gltf-model src="#lambo1" position="0 0 0" scale="1 1 1" material=""></a-gltf-model>
+            </a-entity>
+            <a-entity id="warehouseEl" position="-30 0 -6" rotation="0 180 0" scale="1 1 1">
+                <a-light type="point" id="spreadMenuLight" color="lime" light="color: #00fffb; intensity: 1.69; type: point; castShadow: true" position="0 0 1.06082"></a-light>
+                <a-gltf-model src="#warehouse" position="0 0 0" scale="1 1 1" material=""></a-gltf-model>
             </a-entity>
             <a-entity id="vrBackdropEl" position="0 0 -14" rotation="0 0 0" scale="1 1 1">
                 <!-- <a-light type="point" id="spreadMenuLight" color="lime" light="color: #00fffb; intensity: 1.69; type: point; castShadow: true" position="0 0 1.06082"></a-light> -->
@@ -83,6 +88,7 @@
             <a-sky src="#universe" meterial="opacity: 0.25"></a-sky>
 
             <a-entity id="rig" camera look-controls wasd-controls rotation-reader position="0 1.6 0">
+                <a-cursor material="color: rgb(7, 212, 255);"></a-cursor>
             </a-entity>
         </a-scene>
      </div>
