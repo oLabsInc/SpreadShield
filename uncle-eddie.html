@@ -52,6 +52,7 @@
                 <a-asset-item id="vrBackdrop" src="./public/media/models/backdrop/studio_v1_for_car_2k.glb"></a-asset-item>
                 <a-asset-item id="spreadMenu" src="./public/media/models/system/vr-spread-menu_1a1a1a.gltf"></a-asset-item>
                 <a-asset-item id="warehouse" src="./public/media/models/backdrop/warehouse_8k.glb"></a-asset-item>
+                <a-asset-item id="jonnyo" src="./public/media/models/character/jonny-o_1a1a2b_glb.glb"></a-asset-item>
                 <audio id="song" src="./public/media/audio/lightitup.wav" loop></audio>
                 <img id="universe" src="./public/media/images/360/universe.jpg" alt="">
             </a-assets>
@@ -62,6 +63,11 @@
                 <a-light type="spot" id="lamboLightSpot" light="color: #00fffb; intensity: 0.3; type: spot; castShadow: true" position="0 2 0" animation="property: light.intensity; from: 0.3; to: 1.0; dur: 5000; dir: alternate; easing: easeInOutElastic; elasticity: 1200; loop: true;"></a-light>
                 <a-light type="point" id="lamboLightPoint" light="color: #00fffb; intensity: 0.1; type: point; castShadow: true" position="0 2 0" animation="property: light.intensity; from: 0.1; to: 0.8; dur: 5000; dir: alternate; easing: easeInOutElastic; elasticity: 1200; loop: true;"></a-light>
                 <a-gltf-model src="#lambo1" position="0 0 0" scale="1 1 1" material=""></a-gltf-model>
+            </a-entity>
+            <a-entity id="jonnyoEl" position="-2.16612 0 -2.82773" rotation="0 45 0" scale="">
+                <a-light type="point" id="spreadMenuLight" color="lime" light="color: #ffff00; intensity: 1.6; castShadow: true" position="-0.27731 3 0.78351"></a-light>
+                <a-box scale="1.96 2.1 0.14" material="color: #000000" position="-0.0475 0 0.209"></a-box>
+                <a-gltf-model src="#jonnyo" position="" scale="1 1 1" material=""></a-gltf-model>
             </a-entity>
             <a-entity id="warehouseEl" position="-30 0 -6" rotation="0 180 0" scale="1 1 1">
                 <a-light type="point" id="spreadMenuLight" color="lime" light="color: #00fffb; intensity: 1.69; type: point; castShadow: true" position="0 0 1.06082"></a-light>
