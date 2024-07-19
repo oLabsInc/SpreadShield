@@ -45,13 +45,14 @@
                    sortObjects: true;
                    physicallyCorrectLights: true;"
                    xr-mode-ui="false"
-                   fog="type: exponential; color: #111; density: 0.15; near: 0; far: 1000;">
+                   fog="type: exponential; color: #111; density: 0.05; near: 0; far: 1000;">
             <a-assets>
                 <!-- <a-asset-item id="" src="./public/media/models"></a-asset-item> -->
                 <a-asset-item id="lambo1" src="./public/media/models/vehicle/lamborgini_revuelto_1a1a1a.glb"></a-asset-item>
                 <a-asset-item id="lambo2" src="./public/media/models/vehicle/lambo3b.glb"></a-asset-item>
                 <a-asset-item id="vrBackdrop" src="./public/media/models/backdrop/studio_v1_for_car_2k.glb"></a-asset-item>
-                <a-asset-item id="spreadMenu" src="./public/media/models/system/vr-spread-menu_1a1a1a.gltf"></a-asset-item>
+                <a-asset-item id="spreadMenu" src="./public/media/models/system/WS_3d_main-logo_1a1a1a.glb"></a-asset-item>
+                <a-asset-item id="spreadTitle" src="./public/media/models/system/WS_3d_main-header_1a1a1a.glb"></a-asset-item>
                 <!-- <a-asset-item id="warehouse" src="./public/media/models/backdrop/warehouse_8k.glb"></a-asset-item> -->
                 <a-asset-item id="jonnyo" src="./public/media/models/character/jonny-o_1a1a3a_glb.glb"></a-asset-item>
                 <audio id="song" src="./public/media/audio/lightitup.wav" loop></audio>
@@ -65,10 +66,10 @@
                 <a-light type="point" id="lamboLightPoint" light="color: #00fffb; intensity: 0.1; type: point; castShadow: true" position="0 2 0" animation="property: light.intensity; from: 0.1; to: 0.8; dur: 5000; dir: alternate; easing: easeInOutElastic; elasticity: 1200; loop: true;"></a-light>
                 <a-gltf-model src="#lambo1" position="0 0 0" scale="1 1 1" material=""></a-gltf-model>
             </a-entity>
-            <a-entity id="lambo2El" position="0 0 20" rotation="0 180 0" scale="1 1 1" animation="property: position; from: 0 0 20; to: 0 0 2.25; dur: 8000; easing: easeInOutCubic; delay: 12000; loop: false;">
+            <a-entity id="lambo2El" position="0 0 20" rotation="0 180 0" scale="1 1 1" animation="property: position; from: 0 0 20; to: 0 0 4; dur: 8000; easing: easeInOutCubic; delay: 2000; loop: false;">
                 <a-light type="spot" id="lambo2LightSpot" light="color: orange; intensity: 1; type: spot; castShadow: true" position="0 2 0" animation="property: light.intensity; from: 0.3; to: 1.0; dur: 5000; dir: alternate; easing: easeInOutElastic; elasticity: 1200; loop: true;"></a-light>
                 <a-light type="point" id="lambo2LightPoint" light="color: lightskyblue  ; intensity: 0.5; type: point; castShadow: true" position="0 2 0" animation="property: light.intensity; from: 0.1; to: 0.8; dur: 5000; dir: alternate; easing: easeInOutElastic; elasticity: 1200; loop: true;"></a-light>
-                <a-gltf-model src="#lambo2" position="0 0 0" scale="1 1 1" material=""></a-gltf-model>
+                <a-gltf-model src="#lambo2" position="0 0 0" scale="1 1 1" material="alphaTest: 1;"></a-gltf-model>
             </a-entity>
             <a-entity id="jonnyoEl" position="-2.16612 0 -2.82773" rotation="0 45 0" scale="">
                 <a-light type="point" id="spreadMenuLight" color="lime" light="color: #ffff00; intensity: 1.6; castShadow: true" position="-0.27731 3 0.78351"></a-light>
@@ -88,9 +89,14 @@
                 <a-gltf-model src="#vrBackdrop" position="" scale="" material="opacity: 0.46; transparent: true" gltf-model="./public/media/models/backdrop/studio_v1_for_car_2k.glb"></a-gltf-model>
             </a-entity>
 
-            <a-entity id="spreadMenuVr" position="0 -2 0" rotation="0 0 0" scale="1 1 1" animation="property: rotation; from: 0 0 0; to: 270 90 270; dur: 5000; easing: linear; loop: false">
-                <a-light type="point" id="spreadMenuLight" color="lime" light="color: #00fffb; intensity: 1.69; type: point; castShadow: true" position="0 0 1.06082"></a-light>
+            <a-entity id="spreadMenuVr" position="0 -2 0" rotation="0 0 0" scale="0.75 0.75 0.75" animation="property: rotation; from: 0 0 0; to: 0 -90 75; dur: 5000; easing: easeInOutElastic; loop: false">
+                <a-light type="point" id="spreadMenuLight" color="lime" light="color: #00fffb; intensity: 0.69; type: point; castShadow: true" position="0 0 1.06082"></a-light>
                 <a-gltf-model src="#spreadMenu" position="0 0 0" scale="1 1 1" material="metalness: 1; transparent: true; opacity: 0.5;"></a-gltf-model>
+            </a-entity>
+
+            <a-entity id="spreadTitleVr" position="0 3 0" rotation="0 0 0" scale="1 1 1">
+                <a-light type="point" id="spreadMenuLight" color="lime" light="color: #fff; intensity: 1.69; type: point; castShadow: true" position="0 2 0"></a-light>
+                <a-gltf-model src="#spreadTitle" position="0 0 0" scale="1 1 1" material="metalness: 1; transparent: true; opacity: 0.5;" shadows="cast: true; recieve: true;"></a-gltf-model>
             </a-entity>
             <a-light type="point" position="0 30.25241 0" light="angle: 80; color: #ffffff; decay: 0.27; intensity: 1; penumbra: 0.16; type: point; castShadow: true"></a-light>
 
@@ -243,8 +249,8 @@
             console.log(`camRot y: ${camRot.y}`)
             console.log(`camRot z: ${camRot.z}`)
 
-            spreadMenuVr.setAttribute('position', { x: camLoc.x, y: -1, z: camLoc.z });
-            spreadMenuVr.setAttribute('rotation', { x: -90, y: (camRot.y * 57.29578), z: 0 });
+            spreadMenuVr.setAttribute('position', { x: (camLoc.x * 0.5), y: 0, z: (camLoc.z * 0.5) });
+            spreadMenuVr.setAttribute('rotation', { x: 0, y: ((camRot.y * 57.29578) + -90), z: 75});
         })
     </script>
 
