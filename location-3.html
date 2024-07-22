@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>SpreadShield Locations</title>
-<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
-<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
+    <title>SpreadShield Locations</title>
+    <link rel="icon" type="image/png" href="./public/media/images/windshield-icon/logo_2a1a1a.png">
+
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
+    <link rel="stylesheet" href="./public/style/oe.css">
+    <link rel="stylesheet" href="./public/style/spreadshield.css">
+    <style>
+
+        #fullscreenToggle {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            z-index: 100;
+        }
+    </style>
 </head>
 <body>
-<a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
-    <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
-    <a-entity material='color: red' geometry='primitive: box' gps-new-entity-place="latitude: 28.84712010619396; longitude: -82.00401660674106" scale="10 10 10"></a-entity>
-    <a-entity material='color: green' geometry='primitive: box' gps-new-entity-place="latitude: 28.84731405551139; longitude: -82.0042550420282" scale="10 10 10"></a-entity>
-    <a-entity material='color: blue' geometry='primitive: box' gps-new-entity-place="latitude: 28.846882165691735; longitude: -82.00361847912211" scale="10 10 10"></a-entity>
-    <a-entity material='color: orange' geometry='primitive: box' gps-new-entity-place="latitude: 28.846802185898703; longitude: -82.00167226630268" scale="10 10 10"></a-entity>
-</a-scene>
+<div id="fullscreenToggle">
+    <img id="fullscreenBtn" src="./public/media/images/system/view-expand.png" alt="Fullscreen Icon">
+    <img id="exitFullscreenBtn" class="hidden" src="./public/media/images/system/view-collapse.png"
+        alt="Exit Fullscreen Icon">
+</div>
+
+    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
+        <a-assets>
+            <a-asset-item id="mapMarker" src="./public/media/models/system/map-marker-aqua.glb"></a-asset-item>
+        </a-assets>
+        <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
+        <!-- <a-gltf-model src="#lambo1" gps-new-entity-place="latitude: 28.84712010619396; longitude: -82.00401660674106" scale="1 1 1"></a-gltf-model>
+        <a-gltf-model src="#lambo1" gps-new-entity-place="latitude: 28.84731405551139; longitude: -82.0042550420282" scale="1 1 1"></a-gltf-model>
+        <a-gltf-model src="#lambo1" gps-new-entity-place="latitude: 28.846882165691735; longitude: -82.00361847912211" scale="1 1 1"></a-gltf-model>
+        <a-gltf-model src="#lambo1" gps-new-entity-place="latitude: 28.846802185898703; longitude: -82.00167226630268" scale="1 1 1"></a-gltf-model> -->
+        <a-entity material='color: red' geometry='primitive: box' gps-new-entity-place="latitude: 28.84712010619396; longitude: -82.00401660674106" scale="10 10 10"></a-entity>
+        <a-entity material='color: green' geometry='primitive: box' gps-new-entity-place="latitude: 28.84731405551139; longitude: -82.0042550420282" scale="10 10 10"></a-entity>
+        <a-entity material='color: blue' geometry='primitive: box' gps-new-entity-place="latitude: 28.846882165691735; longitude: -82.00361847912211" scale="10 10 10"></a-entity>
+        <a-entity material='color: orange' geometry='primitive: box' gps-new-entity-place="latitude: 28.846802185898703; longitude: -82.00167226630268" scale="10 10 10"></a-entity>
+    </a-scene>
+
+
+
+    <script>
+        const
+            fullscreenToggle = document.getElementById('fullscreenToggle'),
+            fullscreenBtn = document.getElementById('fullscreenBtn'),
+            exitFullscreenBtn = document.getElementById('exitFullscreenBtn')
+
+        fullscreenBtn.addEventListener('click', e => {
+            document.documentElement.requestFullscreen().catch((e) => {
+                console.log(e)
+            })
+            fullscreenBtn.classList.toggle('hidden')
+            exitFullscreenBtn.classList.toggle('hidden')
+        })
+        exitFullscreenBtn.addEventListener('click', e => {
+            document.exitFullscreen()
+            fullscreenBtn.classList.toggle('hidden')
+            exitFullscreenBtn.classList.toggle('hidden')
+        })
+    </script>
+
+
+
 </body>
 </html>
