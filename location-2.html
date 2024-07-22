@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SpreadShield Locations</title>
+<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
+<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
+</head>
+<body>
+<a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
+    <a-camera gps-new-camera='gpsMinDistance: 5' simulateLatitude="28.84712010619396" simulateLongitude="-82.00401660674106"></a-camera>
+    <a-entity material='color: red' geometry='primitive: box' gps-new-entity-place="latitude: 28.84712010619396; longitude: -82.00401660674106" scale="10 10 10"></a-entity>
+    <a-entity material='color: green' geometry='primitive: box' gps-new-entity-place="latitude: 28.84731405551139; longitude: -82.0042550420282" scale="10 10 10"></a-entity>
+    <a-entity material='color: blue' geometry='primitive: box' gps-new-entity-place="latitude: 28.846882165691735; longitude: -82.00361847912211" scale="10 10 10"></a-entity>
+    <a-entity material='color: orange' geometry='primitive: box' gps-new-entity-place="latitude: 28.846802185898703; longitude: -82.00167226630268" scale="10 10 10"></a-entity>
+</a-scene>
+</body>
+</html>

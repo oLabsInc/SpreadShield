@@ -92,6 +92,14 @@
             <a-entity id="spreadMenuVr" position="0 -2 0" rotation="0 0 0" scale="1 1 1" animation="property: rotation; from: 0 0 0; to: 0 -90 75; dur: 5000; easing: easeInOutElastic; loop: false">
                 <a-light type="point" id="spreadMenuLight" color="lime" light="color: #00fffb; intensity: 0.69; type: point; castShadow: true" position="0 0 1.06082"></a-light>
                 <a-gltf-model src="#spreadMenu" position="0 0 0" scale="0.5 0.5 0.5" material="metalness: 1; transparent: true; opacity: 0.5;"></a-gltf-model>
+                <a-entity id="mainHoverAction" geomtry="primitive: sphere; radius: 0.5;" material="color: #00fffb"
+                    position="-0.02673 0.57022 -0.00222" geometry="primitive: sphere; radius: 0.12">
+
+                </a-entity>
+
+                <a-entity id="subSpreadMenu1Vr" geometry="primitive: torus; radius: 0.68; radiusTubular: 0.06; segmentsRadial: 37" color="red" radius="3"
+                    rotation="0 90 0" position="-0.01505 0.55618 -0.00593"
+                    material="alphaTest: 0.22; opacity: 0; transparent: true; fog: false; height: 50; metalness: 0.81; roughness: 0.75"></a-entity>
             </a-entity>
 
             <a-entity id="spreadTitleVr" position="0 1.5 -2" rotation="0 0 0" scale="1 1 1">
@@ -104,7 +112,15 @@
 
             <a-entity id="rig" camera look-controls wasd-controls="acceleration: 2;" rotation-reader position="0 1.6 0">
                 <a-light></a-light>
-                <a-cursor material="color: rgb(7, 212, 255);"></a-cursor>
+                <a-entity
+                    cursor="fuse: true; fuseTimeout: 500"
+                    position="0 0 -1"
+                    geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                    material="color: aqua; shader: flat"
+                    raycaster="far: 20; interval: 1000; objects: .clickable"
+                >
+
+                </a-entity>
             </a-entity>
         </a-scene>
      </div>
@@ -250,6 +266,11 @@
 
 
     <script>
+        const 
+            mainHoverAction = document.getElementById('mainHoverAction'),
+            subSpreadMenu1Vr = document.getElementById('subSpreadMenu1Vr')
+
+
         AFRAME.registerComponent('rotation-reader', {
             tick: function () {
                 // `this.el` is the element.
@@ -263,6 +284,9 @@
                 console.log(this.el.object3D.position);
             }
         });
+
+
+
     </script>
 </body>
 </html>
