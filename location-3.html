@@ -24,50 +24,61 @@
     <img id="fullscreenBtn" src="./public/media/images/system/view-expand.png" alt="Fullscreen Icon">
     <img id="exitFullscreenBtn" class="hidden" src="./public/media/images/system/view-collapse.png"
         alt="Exit Fullscreen Icon">
-    <a-asset-item id="leaf1" src="./public/media/models/prop/map-marker/marker-assets/medical/cannabis/leaf_1.glb"></a-asset-item>
-    <a-asset-item id="leaf2" src="./public/media/models/prop/map-marker/marker-assets/medical/cannabis/leaf_2.glb"></a-asset-item>
-    <a-asset-item id="wsLogo" src="./public/media/models/system/WS_logo_1a2a3a.glb"></a-asset-item>
-</div>
-
+    </div>
+    
     <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
         <a-assets>
+            <a-asset-item id="leaf1" src="./public/media/models/prop/map-marker/marker-assets/medical/cannabis/leaf_1.glb"></a-asset-item>
+            <a-asset-item id="leaf2" src="./public/media/models/prop/map-marker/marker-assets/medical/cannabis/leaf_2.glb"></a-asset-item>
+            <a-asset-item id="wsLogo" src="./public/media/models/system/WS_logo_1a2a3a.glb"></a-asset-item>
             <a-asset-item id="mapMarker" src="./public/media/models/system/map-marker-aqua.glb"></a-asset-item>
+            <a-asset-item id="jeep1" src="./public/media/models/structure/jeep.glb"></a-asset-item>
         </a-assets>
-        <a-camera gps-new-camera='gpsMinDistance: 25'></a-camera>
-        <!-- <a-entity material='color: red' geometry='primitive: box' gps-new-entity-place="latitude: 28.84712010619396; longitude: -82.00401660674106" scale="10 10 10"></a-entity>
-        <a-entity material='color: green' geometry='primitive: box' gps-new-entity-place="latitude: 28.84731405551139; longitude: -82.0042550420282" scale="10 10 10"></a-entity>
-        <a-entity material='color: blue' geometry='primitive: box' gps-new-entity-place="latitude: 28.846882165691735; longitude: -82.00361847912211" scale="10 10 10"></a-entity>
-        <a-entity material='color: orange' geometry='primitive: box' gps-new-entity-place="latitude: 28.846802185898703; longitude: -82.00167226630268" scale="10 10 10"></a-entity> -->
+        <a-camera gps-new-camera='gpsMinDistance: 1'></a-camera>
 
-        
-        <!-- <a-entity class="spacial-entity-static" data-property-type="Smoke Shop" position="0 0 -10">
-            <a-entity text="value: Wild City; align: center; color: lime;" scale="5 5 5" position="0 1.25 0"></a-entity>
-            <a-entity text="value: Smoke Shop; align: center; color: yellow;" scale="5 5 5" position="0 1 0"></a-entity>
-            <a-gltf-model src="#leaf2" position="0 1.5 0" scale="0.001 0.001 0.001" material="" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true;"></a-gltf-model>
-        </a-entity>      -->
+        <div id="backstage">
+            <div id="backstageActive">
 
-        <a-entity class="spacial-entity-static" data-property-type="Smoke Shop" gps-new-entity-place="latitude: 28.868604341169615; longitude: -82.03768228721614">
-            <a-entity text="value: Wild City; align: center; color: lime;" scale="5 5 5" position="0 1.25 0"></a-entity>
-            <a-entity text="value: Smoke Shop; align: center; color: yellow;" scale="5 5 5" position="0 1 0"></a-entity>
-            <a-gltf-model src="#leaf2" position="0 1.5 0" scale="0.001 0.001 0.001" material="" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true;"></a-gltf-model>
+            </div>
+            <div id="backstageNotes" style="display: none;">
+
+                <!-- <a-entity material='color: red' geometry='primitive: box' gps-new-entity-place="latitude: 28.84712010619396; longitude: -82.00401660674106" scale="10 10 10"></a-entity>
+                <a-entity material='color: green' geometry='primitive: box' gps-new-entity-place="latitude: 28.84731405551139; longitude: -82.0042550420282" scale="10 10 10"></a-entity>
+                <a-entity material='color: blue' geometry='primitive: box' gps-new-entity-place="latitude: 28.846882165691735; longitude: -82.00361847912211" scale="10 10 10"></a-entity>
+                <a-entity material='color: orange' geometry='primitive: box' gps-new-entity-place="latitude: 28.846802185898703; longitude: -82.00167226630268" scale="10 10 10"></a-entity> -->
+
+                
+                <!-- <a-entity class="spacial-entity-static" data-property-type="Smoke Shop" position="0 0 -10">
+                    <a-entity text="value: Wild City; align: center; color: lime;" scale="5 5 5" position="0 1.25 0"></a-entity>
+                    <a-entity text="value: Smoke Shop; align: center; color: yellow;" scale="5 5 5" position="0 1 0"></a-entity>
+                    <a-gltf-model src="#leaf2" position="0 1.5 0" scale="0.001 0.001 0.001" material="" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true;"></a-gltf-model>
+                </a-entity>      -->
+                
+                <!-- <a-entity id="spreadSpot_1" class="spacial-entity-static" data-property-type="Smoke Shop" gps-new-entity-place="latitude: 28.84712010619396; longitude: -82.00401660674106"> -->
+
+                <!-- 
+                    -->
+
+            </div>
+        </div>
+
+
+            <a-entity class="spacial-entity-static" data-property-type="House"
+                gps-new-entity-place="latitude: 28.847086; longitude: -82.003973">
+                <a-entity text="value: 3558 Cosmos Way; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
+                <a-entity text="value: House; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#leaf2" position="0 1.5 0" scale="0.001 0.001 0.001" material=""
+                    animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true;"></a-gltf-model>
+            </a-entity>
+
+        <a-entity id="spreadSpot_1" class="spacial-entity-static" data-property-type="House" position="0 0 -3">
+            <a-entity text="value: 3558 Cosmos Way; align: center; color: white;" scale="5 5 5" position="0 1.25 0"></a-entity>
+            <a-entity text="value: House; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+            <a-gltf-model src="#wsLogo" position="0 1.5 0" scale="1 1 1" material="opacity: 0.5" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true;"></a-gltf-model>
         </a-entity>
 
 
-         
-        <a-entity class="spacial-entity-static" data-property-type="Smoke Shop" gps-new-entity-place="latitude: 28.86866992174367; longitude: -82.03795897159797">
-            <a-entity text="value: Wild City; align: center; color: lime;" scale="5 5 5" position="0 1.25 0"></a-entity>
-            <a-entity text="value: Smoke Shop 2; align: center; color: yellow;" scale="5 5 5" position="0 1 0"></a-entity>
-            <a-gltf-model src="#leaf1" position="0 1.5 0" scale="0.001 0.001 0.001" material="" ></a-gltf-model>
-        </a-entity>
 
-         
-
-        
-        <a-entity class="spacial-entity-static" data-property-type="Smoke Shop" gps-new-entity-place="latitude: 28.868260907672877; longitude: -82.03770263455671">
-            <a-entity text="value: oLabs; align: center; color: lightskyblue;" scale="5 5 5" position="0 1.25 0"></a-entity>
-            <a-entity text="value: WideSpread; align: center; color: #FFFFFF;" scale="5 5 5" position="0 1 0"></a-entity>
-            <a-gltf-model src="#wsLogo" position="0 1.5 0" scale="0.001 0.001 0.001" material="" ></a-gltf-model>
-        </a-entity>
 
 
         
@@ -111,7 +122,11 @@
         })
     </script>
 
-
+    <script>
+        const
+            spreadSpot1 = document.getElementById('spreadSpot_1'),
+            spreadSpot2 = document.getElementById('spreadSpot_2')
+    </script>
 
 </body>
 </html>

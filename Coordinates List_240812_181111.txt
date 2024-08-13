@@ -1,0 +1,1116 @@
+Man Foo
+
+Address
+26 Ford St, Dedham, MA 02026, USA
+
+Latitude : 42.234109
+Longitude : -71.162727
+
+Deck: 42.234172,-71.162636
+Backyard:
+42.234218,-71.162574
+42.234151,-71.162472
+42.234095,-71.16258
+42.234199,-71.162681
+Front Yard:
+42.234059,-71.162794
+42.233982,-71.1627
+42.234061,-71.162553
+42.234108,-71.162618
+42.234073,-71.162683
+42.234097,-71.162715
+Car 1: 42.234132,-71.162805
+Car 2: 42.23411,-71.162779
+Garage: 42.234167,-71.162735
+
+Crosswalks:
+42.233989,-71.162737
+42.233959,-71.162775
+42.234209,-71.162114
+42.234272,-71.162172
+42.234206,-71.162032
+42.234234,-71.161955
+42.234288,-71.161942
+42.234324,-71.162006
+42.236004,-71.163065
+42.23223,-71.159975
+42.232266,-71.159892
+42.232327,-71.15985
+42.232361,-71.159878
+42.232266,-71.159762
+42.232293,-71.159697
+42.231492,-71.159847
+42.231487,-71.159762
+42.231902,-71.158997
+42.231967,-71.159025
+42.231921,-71.158887
+42.231983,-71.158756
+42.232507,-71.158012
+42.232548,-71.15796
+42.232604,-71.157973
+42.232627,-71.158011
+
+Stop: 
+42.233968,-71.162797
+42.234825,-71.163382
+42.233314,-71.164001
+42.234201,-71.162147
+42.234201,-71.161939
+42.234325,-71.161968
+42.234354,-71.162189
+42.233643,-71.1615
+42.233601,-71.161149
+42.233249,-71.162159
+42.232366,-71.159841
+42.23195,-71.158746
+42.231315,-71.159701
+42.230463,-71.160139
+42.230343,-71.160637
+42.2326,-71.158176
+42.23288,-71.158455
+42.230531,-71.156642
+42.230066,-71.156105
+42.23035,-71.155972
+42.229473,-71.154304
+
+Yield 
+
+42.231981,-71.159797
+42.23165,-71.159645
+42.231915,-71.159361
+
+Railway 
+
+42.232635,-71.160287
+42.232602,-71.160261
+42.233247,-71.158625
+42.233291,-71.158638
+
+Hillsborough Entrance 
+
+Address
+2095 Hillsborough Trail, The Villages, FL 32163, USA
+
+Latitude : 28.848662
+Longitude : -82.004462
+
+Hillsborough Exit
+
+Address
+2095 Hillsborough Trail, The Villages, FL 32163, USA
+
+Latitude : 28.848758
+Longitude : -82.004322
+
+Cart Stop Sign & Merge
+
+Address
+2077 Glenarden Path, The Villages, FL 32163, USA
+
+Latitude : 28.849255
+Longitude : -82.003903
+
+Cart Tunnel 1
+
+Address
+3458 Tisbury Ave, The Villages, FL 32163, USA
+
+Latitude : 28.849693
+Longitude : -82.003245
+
+Cary Tunnel 2
+
+Address
+3412 Yorktown Ct, The Villages, FL 32163, USA
+
+Latitude : 28.849974
+Longitude : -82.003473
+
+90° Turn Into Cart Tunnel 
+
+Address
+3412 Yorktown Ct, The Villages, FL 32163, USA
+
+Latitude : 28.850012
+Longitude : -82.003493
+
+Other Cart Path
+
+Address
+1949 Quailey Ct, The Villages, FL 32163, USA
+
+Latitude : 28.850032
+Longitude : -82.002397
+
+Cross
+Address
+1825 Evans Prairie Trail, The Villages, FL 32163, USA
+
+Latitude : 28.853769
+Longitude : -81.998783
+
+Cross
+Address
+1825 Evans Prairie Trail, The Villages, FL 32163, USA
+
+Latitude : 28.853815
+Longitude : -81.998809
+
+Stop
+Address
+1825 Evans Prairie Trail, The Villages, FL 32163, USA
+
+Latitude : 28.853662
+Longitude : -81.998719
+
+Parking 
+
+Address
+1825 Evans Prairie Trail, The Villages, FL 32163, USA
+
+Latitude : 28.853631
+Longitude : -81.998329
+
+Evans Prairie Starter Shack 
+
+Address
+1825 Evans Prairie Trail, The Villages, FL 32163, USA
+
+Latitude : 28.853489
+Longitude : -81.997825
+
+Hole 1 Farthest Gold?
+
+Address
+1825 Evans Prairie Trail, The Villages, FL 32163, USA
+
+Latitude : 28.854024
+Longitude : -81.997522
+
+Hole 1 Middle 
+
+Address
+1825 Evans Prairie Trail, The Villages, FL 32163, USA
+
+Latitude : 28.853099
+Longitude : -81.997501
+
+Hole 1 Closest 
+
+Address
+1825 Evans Prairie Trail, The Villages, FL 32163, USA
+
+Latitude : 28.852506
+Longitude : -81.997209
+
+Hole 1 Pin
+
+Address
+3468 Bosie Run, The Villages, FL 32163, USA
+
+Latitude : 28.84918
+Longitude : -81.996431
+
+Hole 2 Farthest 
+
+Address
+3490 Amish Path, The Villages, FL 32163, USA
+
+Latitude : 28.848154
+Longitude : -81.994294
+
+Hole 2 Middle 
+
+Address
+3506 Amish Path, The Villages, FL 32163, USA
+
+Latitude : 28.847697
+Longitude : -81.994203
+
+Hole 2 Closest 
+
+Address
+3526 Amish Path, The Villages, FL 32163, USA
+
+Latitude : 28.847109
+Longitude : -81.9935
+
+Hole 2 Pin
+
+Address
+1616 Shale Trail Loop, The Villages, FL 32163, USA
+
+Latitude : 28.845478
+Longitude : -81.993236
+
+Hole 3 Farthest 
+
+Hole 3 Middle 
+
+Hole 3 Closest 
+
+Hole 3  Pin
+
+Hole 3 Farthest 
+
+Hole 3 Middle 
+
+Hole 3 Closest 
+
+Hole 3  Pin
+
+Hole 3 Farthest 
+
+Hole 3 Middle 
+
+Hole 3 Closest 
+
+Hole 3  Pin
+
+Shack
+
+Address
+2068 Glenarden Path, The Villages, FL 32163, USA
+
+Latitude : 28.848416
+Longitude : -82.004094
+
+Residents Entrance Gate
+
+Address
+3521 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848246
+Longitude : -82.00405
+
+Guest Entrance Gate
+
+Address
+3515 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848275
+Longitude : -82.004016
+
+Exit Gate
+
+Address
+2062 Glenarden Path, The Villages, FL 32163, USA
+
+Latitude : 28.848323
+Longitude : -82.003922
+
+Cart Crossing 
+
+Address
+2062 Glenarden Path, The Villages, FL 32163, USA
+
+Latitude : 28.848219
+Longitude : -82.003831
+
+Cart Crossing 
+
+Address
+3525 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848157
+Longitude : -82.003926
+
+Cosmos Crosswalk 1
+
+Address
+3549 Wyngate Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847635
+Longitude : -82.003255
+
+Cosmos Crosswalk 2
+
+Address
+3549 Wyngate Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847674
+Longitude : -82.003299
+
+Cart Merge
+
+Address
+2044 Glenarden Path, The Villages, FL 32163, USA
+
+Latitude : 28.847769
+Longitude : -82.003284
+
+Cart Merge Ahead
+
+Address
+2034 Glenarden Path, The Villages, FL 32163, USA
+
+Latitude : 28.84753
+Longitude : -82.002844
+
+Carts Merge 2
+
+Address
+3525 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848044
+Longitude : -82.003827
+
+Cart Merge:
+28.84747,-82.000218
+28.848343,-81.997746
+
+Cart Merge Ahead:
+28.847416,-82.000422
+28.848383,-81.997574
+
+Cosmos Way
+
+Address
+3558 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.847086
+Longitude : -82.003973
+
+Back Patio Upper: 28.847265,-82.004023
+Back Patio Lower: 28.847236,-82.004065
+Back Patio Gate: 28.8472,-82.004109
+AC: 28.847199,-82.003969
+Illegal Smart Meter: 28.847188,-82.003906
+Master Bed: 28.847165,-82.004118
+Master Bath: 28.84713,-82.004092
+Linai: 28.847207,-82.004063
+Living Room: 28.847185,-82.004064
+Dining Room: 28.847145,-82.004017
+Kitchen: 28.847195,-82.004011
+Laundry: 28.847165,-82.003995
+Utilities Closest: 28.847168,-82.00396
+Garage: 28.847143,-82.003933
+Foyer: 28.847108,-82.004008
+Coat Closet: 28.847129,-82.003988
+Linen Closet: 28.847108,-82.004019
+Bedroom 2: 28.847093,-82.004055
+Bedroom 3: 28.84707,-82.00403
+Guest Bath: 28.847126,-82.004053
+Grill Area: 28.847249,-82.003982
+Backyard: 28.847223,-82.003982
+Front Yard: 28.847019,-82.003949
+Side Yard 1: 28.847148,-82.003833
+Side Yard 2: 28.84709,-82.004099
+Attic Access: 28.84715,-82.00397
+Electric Panel: 28.847186,-82.003924
+Irrigation Panel: 28.847197,-82.003924
+
+Stop:
+28.847354,-82.003579
+28.847328,-82.003444
+28.847616,-82.00327
+28.847615,-82.004154
+28.848069,-82.004713
+28.847247,-82.005888
+28.846695,-82.005649
+28.846059,-82.006324
+28.846004,-82.007079
+28.846799,-82.007094
+28.847127,-82.001817
+28.846716,-82.0022
+28.846498,-82.003403
+28.845339,-82.004137
+28.845197,-82.004199
+28.844624,-82.004162
+28.843976,-82.004031
+28.843887,-82.004633
+28.843265,-82.004637
+28.842522,-82.00464
+28.844133,-82.005858
+28.844017,-82.005836
+28.843412,-82.005907
+28.843431,-82.005806
+28.842809,-82.005817
+28.848033,-81.998291
+28.848273,-81.997502
+
+Crossing:
+28.847664,-82.0033
+28.847638,-82.003255
+28.847157,-82.001871
+28.847153,-82.001817
+28.847721,-81.999345
+28.847736,-81.999306
+28.847755,-81.999252
+28.848031,-81.998371
+28.848061,-81.998301
+28.848274,-81.997573
+28.848296,-81.997491
+
+Hillsborough Pool: 28.847751,-81.997856
+Hillsborough Mail: 28.847935,-81.997634
+ATM: 28.847955,-81.997697
+Water Fountain: 28.847954,-81.997576
+
+Ron
+
+Address
+3566 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.846957
+Longitude : -82.004136
+
+Next to Ron
+
+Address
+3570 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.846823
+Longitude : -82.004253
+
+Juice Ev
+
+Address
+3548 Wyngate Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847117
+Longitude : -82.003387
+
+Dan Donna
+
+Address
+2041 Druid St, The Villages, FL 32163, USA
+
+Latitude : 28.846808
+Longitude : -82.003655
+
+Rick Marilyn 
+
+Address
+3586 Alzarine Terrace, The Villages, FL 32163, USA
+
+Latitude : 28.846458
+Longitude : -82.003641
+
+Bob Louis 
+
+Address
+3571 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.8466
+Longitude : -82.00404
+
+Across Juice Ev
+
+Address
+3549 Wyngate Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847349
+Longitude : -82.003242
+
+Address
+3576 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.84666
+Longitude : -82.004358
+
+Address
+2069 Vertex Ct, The Villages, FL 32163, USA
+
+Latitude : 28.846454
+Longitude : -82.004528
+
+Address
+2077 Vertex Ct, The Villages, FL 32163, USA
+
+Latitude : 28.846541
+Longitude : -82.004706
+
+Address
+2085 Vertex Ct, The Villages, FL 32163, USA
+
+Latitude : 28.846425
+Longitude : -82.004959
+
+Address
+2078 Vertex Ct, The Villages, FL 32163, USA
+
+Latitude : 28.846234
+Longitude : -82.004973
+
+Address
+2070 Vertex Ct, The Villages, FL 32163, USA
+
+Latitude : 28.84609
+Longitude : -82.004835
+
+Address
+2035 Druid St, The Villages, FL 32163, USA
+
+Latitude : 28.846708
+Longitude : -82.003439
+
+Address
+2025 Druid St, The Villages, FL 32163, USA
+
+Latitude : 28.846623
+Longitude : -82.003248
+
+Address
+2017 Druid St, The Villages, FL 32163, USA
+
+Latitude : 28.846539
+Longitude : -82.003048
+
+Janet
+
+Address
+2011 Druid St, The Villages, FL 32163, USA
+
+Latitude : 28.846463
+Longitude : -82.002842
+
+Address
+3552 Wyngate Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847045
+Longitude : -82.003237
+
+Address
+3556 Wyngate Pl, The Villages, FL 32163, USA
+
+Latitude : 28.846961
+Longitude : -82.003031
+
+Address
+3560 Wyngate Pl, The Villages, FL 32163, USA
+
+Latitude : 28.846879
+Longitude : -82.002873
+
+Address
+3560 Wyngate Pl, The Villages, FL 32163, USA
+
+Latitude : 28.84682
+Longitude : -82.002715
+
+Address
+3570 Wyngate Pl, The Villages, FL 32163, USA
+
+Latitude : 28.846761
+Longitude : -82.00253
+
+Address
+3555 Wyngate Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847234
+Longitude : -82.003004
+
+Address
+3559 Wyngate Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847161
+Longitude : -82.002745
+
+Address
+3565 Wyngate Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847059
+Longitude : -82.002578
+
+Address
+3571 Wyngate Pl, The Villages, FL 32163, USA
+
+Latitude : 28.846983
+Longitude : -82.002355
+
+Address
+3575 Wyngate Pl, The Villages, FL 32163, USA
+
+Latitude : 28.846894
+Longitude : -82.002142
+
+Address
+1966 Druid St, The Villages, FL 32163, USA
+
+Latitude : 28.847019
+Longitude : -82.001692
+
+Vic 
+
+Address
+1972 Druid St, The Villages, FL 32163, USA
+
+Latitude : 28.846863
+Longitude : -82.001765
+
+Address
+1976 Druid St, The Villages, FL 32163, USA
+
+Latitude : 28.846678
+Longitude : -82.001875
+
+Address
+1982 Druid St, The Villages, FL 32163, USA
+
+Latitude : 28.846563
+Longitude : -82.002036
+
+Address
+3587 Alzarine Terrace, The Villages, FL 32163, USA
+
+Latitude : 28.846326
+Longitude : -82.00336
+
+Address
+3597 Alzarine Terrace, The Villages, FL 32163, USA
+
+Latitude : 28.846095
+Longitude : -82.003471
+
+Address
+3609 Alzarine Terrace, The Villages, FL 32163, USA
+
+Latitude : 28.845867
+Longitude : -82.003536
+
+Marilyn Neighbor 
+
+Address
+3594 Alzarine Terrace, The Villages, FL 32163, USA
+
+Latitude : 28.84627
+Longitude : -82.003715
+
+Address
+3594 Alzarine Terrace, The Villages, FL 32163, USA
+
+Latitude : 28.846135
+Longitude : -82.003802
+
+Address
+3579 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.846435
+Longitude : -82.004088
+
+Address
+3579 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.846302
+Longitude : -82.004189
+
+Address
+3591 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.846155
+Longitude : -82.004279
+
+Address
+3595 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.846004
+Longitude : -82.004392
+
+Address
+3601 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.84589
+Longitude : -82.004518
+
+Address
+3601 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.845781
+Longitude : -82.004661
+
+Address
+3611 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.845675
+Longitude : -82.004827
+
+Address
+3619 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.845524
+Longitude : -82.004933
+
+Address
+3639 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.845343
+Longitude : -82.005072
+
+Address
+3639 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.845179
+Longitude : -82.005084
+
+Address
+3643 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.845008
+Longitude : -82.005072
+
+Address
+3649 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.84483
+Longitude : -82.005106
+
+Address
+3648 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.844891
+Longitude : -82.005388
+
+Address
+3640 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.845138
+Longitude : -82.005376
+
+Address
+3632 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.845302
+Longitude : -82.005395
+
+Address
+3626 Cosmos Way, The Villages, FL 32163, USA
+
+Latitude : 28.845459
+Longitude : -82.005417
+
+Address
+2058 Xanadu Loop, The Villages, FL 32163, USA
+
+Latitude : 28.845762
+Longitude : -82.005515
+
+Address
+2070 Xanadu Loop, The Villages, FL 32163, USA
+
+Latitude : 28.845866
+Longitude : -82.005817
+
+Address
+2078 Xanadu Loop, The Villages, FL 32163, USA
+
+Latitude : 28.845909
+Longitude : -82.006059
+
+Address
+2055 Xanadu Loop, The Villages, FL 32163, USA
+
+Latitude : 28.84583
+Longitude : -82.005171
+
+Address
+2059 Xanadu Loop, The Villages, FL 32163, USA
+
+Latitude : 28.845956
+Longitude : -82.005302
+
+Address
+2063 Xanadu Loop, The Villages, FL 32163, USA
+
+Latitude : 28.846061
+Longitude : -82.005439
+
+Address
+2067 Xanadu Loop, The Villages, FL 32163, USA
+
+Latitude : 28.846146
+Longitude : -82.005627
+
+Address
+2071 Xanadu Loop, The Villages, FL 32163, USA
+
+Latitude : 28.846162
+Longitude : -82.005846
+
+Vail Ct.
+
+Address
+3536 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.847371
+Longitude : -82.003767
+
+Address
+3532 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.847427
+Longitude : -82.003881
+
+Address
+3528 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.847522
+Longitude : -82.004009
+
+Address
+3537 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.847573
+Longitude : -82.00361
+
+Address
+3533 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.847644
+Longitude : -82.003731
+
+Address
+3529 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.847724
+Longitude : -82.003858
+
+Address
+3529 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.847762
+Longitude : -82.004003
+
+Address
+3521 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.847822
+Longitude : -82.004188
+
+Address
+3515 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.847955
+Longitude : -82.004376
+
+Address
+3511 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848053
+Longitude : -82.004451
+
+Address
+3507 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848145
+Longitude : -82.004571
+
+Address
+3503 Vail Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848237
+Longitude : -82.004691
+
+Address
+2059 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847554
+Longitude : -82.004431
+
+Address
+2060 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847385
+Longitude : -82.004261
+
+Address
+2066 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847283
+Longitude : -82.004405
+
+Address
+2070 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847198
+Longitude : -82.004484
+
+Address
+2074 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847117
+Longitude : -82.004596
+
+Address
+2078 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847023
+Longitude : -82.004714
+
+Address
+2084 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.846956
+Longitude : -82.004853
+
+Address
+2084 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.846888
+Longitude : -82.004964
+
+Address
+2092 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.84681
+Longitude : -82.005079
+
+Address
+2098 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.84674
+Longitude : -82.005208
+
+Address
+2098 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.846674
+Longitude : -82.00531
+
+Address
+2106 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.846616
+Longitude : -82.005476
+
+Address
+3588 Onyx Ave, The Villages, FL 32163, USA
+
+Latitude : 28.846439
+Longitude : -82.005723
+
+Address
+3578 Onyx Ave, The Villages, FL 32163, USA
+
+Latitude : 28.846592
+Longitude : -82.005783
+
+Address
+3578 Onyx Ave, The Villages, FL 32163, USA
+
+Latitude : 28.846687
+Longitude : -82.005799
+
+Address
+3572 Onyx Ave, The Villages, FL 32163, USA
+
+Latitude : 28.8468
+Longitude : -82.0058
+
+Address
+3566 Onyx Ave, The Villages, FL 32163, USA
+
+Latitude : 28.846933
+Longitude : -82.005825
+
+Address
+3554 Onyx Ave, The Villages, FL 32163, USA
+
+Latitude : 28.847064
+Longitude : -82.005907
+
+Address
+2127 Aber Ln, The Villages, FL 32163, USA
+
+Latitude : 28.847294
+Longitude : -82.006114
+
+Address
+2117 Aber Ln, The Villages, FL 32163, USA
+
+Latitude : 28.84736
+Longitude : -82.005966
+
+Guy with camera on corner 
+
+Address
+2112 Aber Ln, The Villages, FL 32163, USA
+
+Latitude : 28.847261
+Longitude : -82.005654
+
+Camera location 
+
+Address
+2112 Aber Ln, The Villages, FL 32163, USA
+
+Latitude : 28.847234
+Longitude : -82.005747
+
+Address
+2099 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.846846
+Longitude : -82.005496
+
+Address
+2093 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.846935
+Longitude : -82.005361
+
+Address
+2093 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.846992
+Longitude : -82.005252
+
+Address
+2085 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847055
+Longitude : -82.005098
+
+Address
+2085 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847157
+Longitude : -82.005
+
+Address
+2079 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847224
+Longitude : -82.004886
+
+Address
+2069 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.84731
+Longitude : -82.004783
+
+Address
+2065 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847391
+Longitude : -82.004647
+
+Address
+2065 Ironton Pl, The Villages, FL 32163, USA
+
+Latitude : 28.847472
+Longitude : -82.004529
+
+Address
+2076 Aber Ln, The Villages, FL 32163, USA
+
+Latitude : 28.847855
+Longitude : -82.004696
+
+Address
+2080 Aber Ln, The Villages, FL 32163, USA
+
+Latitude : 28.847768
+Longitude : -82.004789
+
+Address
+2077 Aber Ln, The Villages, FL 32163, USA
+
+Latitude : 28.848017
+Longitude : -82.004907
+
+Address
+2081 Aber Ln, The Villages, FL 32163, USA
+
+Latitude : 28.847929
+Longitude : -82.005001
