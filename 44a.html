@@ -32,6 +32,10 @@
         <a-assets>
             <a-asset-item id="wsLogo" src="./public/media/models/system/WS_logo_1a2a3a.glb"></a-asset-item>
             <a-asset-item id="mapMarker1" src="./public/media/models/system/metal+ws-glass_map-marker_1a1a1i.glb"></a-asset-item>
+            <a-asset-item id="mapMarkerRed" src="./public/media/models/system/red+black-glass_map-marker_1a1a1j.glb"></a-asset-item>
+            <a-asset-item id="mapMarkerBlue" src="./public/media/models/system/blue-glass_map-marker_1a1a1j.glb"></a-asset-item>
+            <a-asset-item id="mapMarkerGreen" src="./public/media/models/system/green+black-glass_map-marker_1a1a1j.glb"></a-asset-item>
+            <a-asset-item id="mapMarkerYellow" src="./public/media/models/system/yellow+black-glass_map-marker_1a1a1j.glb"></a-asset-item>
         </a-assets>
         <a-camera gps-new-camera='gpsMinDistance: 1'></a-camera>
 
@@ -39,13 +43,13 @@
             <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
                 gps-new-entity-place="latitude: 28.864786; longitude: -82.015384">
                 <a-entity text="value: Circle K; align: center; color: red;" scale="5 5 5" position="0 1 0"></a-entity>
-                <a-gltf-model src="#mapMarker1" position="0 1.5 0" scale="3 3 3"></a-gltf-model>
+                <a-gltf-model src="#mapMarkerRed" position="0 1.5 0" scale="3 3 3"></a-gltf-model>
             </a-entity>
 
             <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
                 gps-new-entity-place="latitude: 28.866107; longitude: -82.007739">
                 <a-entity text="value: Circle K; align: center; color: red;" scale="5 5 5" position="0 1 0"></a-entity>
-                <a-gltf-model src="#mapMarker1" position="0 1.5 0" scale="3 3 3"></a-gltf-model>
+                <a-gltf-model src="#mapMarkerRed" position="0 1.5 0" scale="3 3 3"></a-gltf-model>
             </a-entity>
 
 <!-- NOT DONE -->
@@ -53,19 +57,19 @@
             <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
                 gps-new-entity-place="latitude: 28.867668; longitude: -82.009331">
                 <a-entity text="value: Lowes; align: center; color: blue;" scale="5 5 5" position="0 1 0"></a-entity>
-                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="5 5 5"></a-gltf-model>
+                <a-gltf-model src="#mapMarkerBlue" position="0 0 0" scale="5 5 5"></a-gltf-model>
             </a-entity>
 
             <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
                 gps-new-entity-place="latitude: 28.867893; longitude: -82.006964">
                 <a-entity text="value: Publix; align: center; color: green;" scale="5 5 5" position="0 1 0"></a-entity>
-                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="3 3 3"></a-gltf-model>
+                <a-gltf-model src="#mapMarkerGreen" position="0 0 0" scale="3 3 3"></a-gltf-model>
             </a-entity>
 
             <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
                 gps-new-entity-place="latitude: 28.865834; longitude: -82.016045">
                 <a-entity text="value: Car Wash; align: center; color: yellow;" scale="5 5 5" position="0 1 0"></a-entity>
-                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="5 5 5"></a-gltf-model>
+                <a-gltf-model src="#mapMarkerYellow" position="0 0 0" scale="5 5 5"></a-gltf-model>
             </a-entity>
 
 
