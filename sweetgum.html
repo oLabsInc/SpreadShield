@@ -31,7 +31,9 @@
     <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
         <a-assets>
             <a-asset-item id="wsLogo" src="./public/media/models/system/WS_logo_1a2a3a.glb"></a-asset-item>
+            <a-asset-item id="wsHeader" src="./public/media/models/system/WS_3d_main-header_1a1a1a.glb"></a-asset-item>
             <a-asset-item id="mapMarker" src="./public/media/models/system/metal+ws-glass_map-marker_1a1a1i.glb"></a-asset-item>
+            <a-asset-item id="puttingGreen" src="./public/media/models/backdrop/putting-green_1a1a1c.glb"></a-asset-item>
         </a-assets>
         <a-camera gps-new-camera='gpsMinDistance: 1'></a-camera>
 
@@ -41,8 +43,7 @@
                 gps-new-entity-place="latitude: 28.855824; longitude: -82.011898">
                 <a-entity text="value: 3198 Hendry Dr; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
                 <a-entity text="value: Golf Course; align: center; color: green;" scale="5 5 5" position="0 1 0"></a-entity>
-                <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1" material=""
-                    animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true;"></a-gltf-model>
+                <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
             </a-entity>
 
 
@@ -50,26 +51,24 @@
             <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
                 gps-new-entity-place="latitude: 28.855755; longitude: -82.012537">
                 <a-entity text="value: Practice Green; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
-                <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1" material=""
-                    animation="property: position; to: 0 0 0; dur: 2000; easing: linear; loop: true;"></a-gltf-model>
+                <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
             </a-entity>
 
 
             <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
                 gps-new-entity-place="latitude: 28.856047; longitude: -82.012884">
                 <a-entity text="value: Hole 1; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
-                <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="2 2 2" animation="property: position; to: 0 0 0; dur: 2000; easing: linear; loop: true;"></a-gltf-model>
+                <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="2 2 2"></a-gltf-model>
             </a-entity>
 
 
             <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
                 gps-new-entity-place="latitude: 28.855755; longitude: -82.012537">
                 <a-entity text="value: Practice Green; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
-                <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1" material=""
-                    animation="property: position; to: 0 0 0; dur: 2000; easing: linear; loop: true;"></a-gltf-model>
-            </a-entity>
-
-
+                <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+                </a-entity>
+                
+            
 
 
 
