@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpreadShield Locations</title>
+    <link rel="icon" type="image/png" href="./public/media/images/windshield-icon/logo_2a1a1a.png">
+
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+
+    <link rel="stylesheet" href="./public/style/oe.css">
+    <link rel="stylesheet" href="./public/style/spreadshield.css">
+    <style>
+
+        #fullscreenToggle {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+<div id="fullscreenToggle">
+    <img id="fullscreenBtn" src="./public/media/images/system/view-expand.png" alt="Fullscreen Icon">
+    <img id="exitFullscreenBtn" class="hidden" src="./public/media/images/system/view-collapse.png"
+        alt="Exit Fullscreen Icon">
+    </div>
+    
+    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
+        <a-assets>
+            <a-asset-item id="wsLogo" src="./public/media/models/system/WS_logo_1a2a3a.glb"></a-asset-item>
+            <a-asset-item id="mapMarker1" src="./public/media/models/system/metal+ws-glass_map-marker_1a1a1i.glb"></a-asset-item>
+        </a-assets>
+        <a-camera gps-new-camera='gpsMinDistance: 1'></a-camera>
+
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.848046; longitude: -82.014883">
+                <a-entity text="value: 3560 Buena Vista Blvd; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
+                <a-entity text="value: Eisenhower Recreation Center; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 1.5 0" scale="3 3 3" material=""
+                    animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true;"></a-gltf-model>
+            </a-entity>
+
+<!-- NOT DONE -->
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.847382; longitude: -82.01372">
+                <a-entity text="value: Entrance; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.84803; longitude: -82.014373">
+                <a-entity text="value: Parking A; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.84749; longitude: -82.015206">
+                <a-entity text="value: Parking B; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.84789; longitude: -82.015565">
+                <a-entity text="value: Parking C; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.848343; longitude: -82.015303">
+                <a-entity text="value: Dumpsters; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.; longitude: -82.">
+                <a-entity text="value: ; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.; longitude: -82.">
+                <a-entity text="value: ; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.848011; longitude: -82.016118">
+                <a-entity text="value: Pool; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.848063; longitude: -82.015891">
+                <a-entity text="value: Pool Filtration; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.84792; longitude: -82.015789">
+                <a-entity text="value: Gentlemen; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.84784; longitude: -82.015774">
+                <a-entity text="value: Ladies; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.846749; longitude: -82.015229">
+                <a-entity text="value: Gazebo; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.846739; longitude: -82.016604">
+                <a-entity text="value: Fitness Area; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.847592; longitude: -82.016246">
+                <a-entity text="value: Basketball Court; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.847265; longitude: -82.016252">
+                <a-entity text="value: Tennis 1; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.847257; longitude: -82.016404">
+                <a-entity text="value: Tennis 2; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.846945; longitude: -82.015706">
+                <a-entity text="value: Pickleball 1; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.846945; longitude: -82.015608">
+                <a-entity text="value: Pickleball 2; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.846961; longitude: -82.015501">
+                <a-entity text="value: Pickleball 3; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.846775; longitude: -82.01569">
+                <a-entity text="value: Pickleball 4; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.846788; longitude: -82.015585">
+                <a-entity text="value: Pickleball 5; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.846788; longitude: -82.015485">
+                <a-entity text="value: Pickleball 6; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.846911; longitude: -82.015889">
+                <a-entity text="value: Pickleball 7; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.846921; longitude: -82.016022">
+                <a-entity text="value: Pickleball 8; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.846922; longitude: -82.016155">
+                <a-entity text="value: Pickleball 9; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.846774; longitude: -82.015868">
+                <a-entity text="value: Pickleball 10; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.846766; longitude: -82.015998">
+                <a-entity text="value: Pickleball 11; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.846742; longitude: -82.016121">
+                <a-entity text="value: Pickleball 12; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.847105; longitude: -82.015279">
+                <a-entity text="value: Bike Rack 1; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.848005; longitude: -82.015794">
+                <a-entity text="value: Bike Rack 2; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.8471; longitude: -82.015394">
+                <a-entity text="value: Gentlemen; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.8471; longitude: -82.015425">
+                <a-entity text="value: Ladies; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.847101; longitude: -82.01541">
+                <a-entity text="value: Water Fountain; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.847015; longitude: -82.015051">
+                <a-entity text="value: Bocci 1; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.847005; longitude: -82.015101">
+                <a-entity text="value: Bocci 2; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.847005; longitude: -82.015153">
+                <a-entity text="value: Bocci 3; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.847002; longitude: -82.015203">
+                <a-entity text="value: Bocci 4; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>    
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.84708; longitude: -82.014897">
+                <a-entity text="value: Shuffleboard 1; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.847057; longitude: -82.014896">
+                <a-entity text="value: Shuffleboard 2; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.847036; longitude: -82.014884">
+                <a-entity text="value: Shuffleboard 3; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.84702; longitude: -82.014881">
+                <a-entity text="value: Shuffleboard 4; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+
+            <!-- BLANK -->
+            <!-- 
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.; longitude: -82.">
+                <a-entity text="value: ; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker1" position="0 0 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+            -->
+
+
+
+
+
+    </a-scene>
+
+
+
+    <script>
+        const
+            fullscreenToggle = document.getElementById('fullscreenToggle'),
+            fullscreenBtn = document.getElementById('fullscreenBtn'),
+            exitFullscreenBtn = document.getElementById('exitFullscreenBtn')
+
+        fullscreenBtn.addEventListener('click', e => {
+            document.documentElement.requestFullscreen().catch((e) => {
+                console.log(e)
+            })
+            fullscreenBtn.classList.toggle('hidden')
+            exitFullscreenBtn.classList.toggle('hidden')
+        })
+        exitFullscreenBtn.addEventListener('click', e => {
+            document.exitFullscreen()
+            fullscreenBtn.classList.toggle('hidden')
+            exitFullscreenBtn.classList.toggle('hidden')
+        })
+    </script>
+
+    <script>
+        const
+            spreadSpot1 = document.getElementById('spreadSpot_1'),
+            spreadSpot2 = document.getElementById('spreadSpot_2')
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,363 @@
+Eisenhower Recreation Center
+
+Address
+3560 Buena Vista Blvd, The Villages, FL 32163, USA
+
+Latitude : 28.848046
+Longitude : -82.014883
+
+Entrance: 28.847382,-82.01372
+
+Parking:
+A: 28.84803,-82.014373
+B: 28.84749,-82.015206
+C: 28.84789,-82.015565
+
+Dumpsters: 28.848343,-82.015303
+
+Stop Signs:
+28.847371,-82.013759
+28.847351,-82.013799
+28.847903,-82.014269
+28.847892,-82.01447
+
+28.850245,-82.014334
+28.849638,-82.014464
+28.849585,-82.015387
+28.849673,-82.015564
+28.850216,-82.015568
+
+Cart Crossings:
+28.847481,-82.013741
+28.847451,-82.013798
+28.847415,-82.013864
+
+Cart Stop:
+28.847395,-82.013881
+28.847496,-82.013723
+28.846128,-82.015388
+28.848449,-82.014417
+28.849089,-82.014451
+
+Pool: 28.848011,-82.016118
+Pool Filtration: 28.848063,-82.015891
+Locker Room
+Gentlemen: 28.84792,-82.015789
+Ladies: 28.84784,-82.015774
+
+
+Gazebo: 28.846749,-82.015229
+
+Fitness Area: 28.846739,-82.016604
+Basketball: 28.847592,-82.016246
+
+Tennis 1: 28.847265,-82.016252
+Tennis 2: 28.847257,-82.016404
+
+Pickleball 1: 28.846945,-82.015706
+Pickleball 2: 28.846945,-82.015608
+Pickleball 3: 28.846961,-82.015501
+Pickleball 4: 28.846775,-82.01569
+Pickleball 5: 28.846788,-82.015585
+Pickleball 6: 28.846788,-82.015485
+Pickleball 7: 28.846911,-82.015889
+Pickleball 8: 28.846921,-82.016022
+Pickleball 9: 28.846922,-82.016155
+Pickleball 10: 28.846774,-82.015868
+Pickleball 11: 28.846766,-82.015998
+Pickleball 12: 28.846742,-82.016121
+
+Bike Rack 1: 28.847105,-82.015279
+Bike Rack 2: 28.848005,-82.015794
+
+Bocci 1: 28.847015,-82.015051
+Bocci 2: 28.847005,-82.015101
+Bocci 3: 28.847005,-82.015153
+Bocci 4: 28.847002,-82.015203
+
+Shuffleboard 1: 28.84708,-82.014897
+Shuffleboard 2:  28.847057,-82.014896
+Shuffleboard 3: 28.847036,-82.014884
+Shuffleboard 4: 28.84702,-82.014881
+
+Restrooms:
+Gentlemen: 28.8471,-82.015394
+Ladies: 28.8471,-82.015425
+
+Water Fountain:
+
+28.847101,-82.01541
+
+Nearby Homes
+
+Address
+3474 Ragsdale Loop, The Villages, FL 32163, USA
+
+Latitude : 28.847839
+Longitude : -82.013284
+
+Address
+3470 Ragsdale Loop, The Villages, FL 32163, USA
+
+Latitude : 28.847808
+Longitude : -82.013546
+
+Address
+3468 Ragsdale Loop, The Villages, FL 32163, USA
+
+Latitude : 28.847905
+Longitude : -82.01377
+
+Address
+3464 Ragsdale Loop, The Villages, FL 32163, USA
+
+Latitude : 28.848117
+Longitude : -82.013873
+
+Address
+3460 Ragsdale Loop, The Villages, FL 32163, USA
+
+Latitude : 28.848311
+Longitude : -82.013758
+Pool: 28.84843,-82.013913
+
+Address
+3400 Viceroy Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848718
+Longitude : -82.013718
+
+Address
+3408 Viceroy Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848699
+Longitude : -82.013955
+
+Address
+3422 Viceroy Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848812
+Longitude : -82.014212
+
+Address
+3423 Viceroy Ct, The Villages, FL 32163, USA
+
+Latitude : 28.849037
+Longitude : -82.01416
+
+Address
+3415 Viceroy Ct, The Villages, FL 32163, USA
+
+Latitude : 28.849251
+Longitude : -82.014009
+
+Address
+3407 Viceroy Ct, The Villages, FL 32163, USA
+
+Latitude : 28.849247
+Longitude : -82.01382
+
+Address
+2442 Underhill Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848799
+Longitude : -82.014615
+
+Address
+2448 Underhill Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848783
+Longitude : -82.014874
+
+Address
+2456 Underhill Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848724
+Longitude : -82.015092
+
+Address
+2464 Underhill Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848671
+Longitude : -82.015282
+
+Address
+2470 Underhill Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848647
+Longitude : -82.015494
+
+Address
+2476 Underhill Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848593
+Longitude : -82.0157
+
+Address
+2482 Underhill Ct, The Villages, FL 32163, USA
+
+Latitude : 28.84857
+Longitude : -82.015933
+Pool: 28.848453,-82.016072
+
+Address
+2490 Underhill Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848671
+Longitude : -82.016196
+
+Address
+2491 Underhill Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848911
+Longitude : -82.016243
+
+Address
+3501 Neaptide Path, The Villages, FL 32163, USA
+
+Latitude : 28.848648
+Longitude : -82.016922
+
+Address
+3505 Neaptide Path, The Villages, FL 32163, USA
+
+Latitude : 28.848495
+Longitude : -82.016678
+
+Address
+3509 Neaptide Path, The Villages, FL 32163, USA
+
+Latitude : 28.848324
+Longitude : -82.016558
+
+Address
+3513 Neaptide Path, The Villages, FL 32163, USA
+
+Latitude : 28.848072
+Longitude : -82.01658
+
+Address
+3519 Neaptide Path, The Villages, FL 32163, USA
+
+Latitude : 28.847896
+Longitude : -82.016683
+
+Address
+3525 Neaptide Path, The Villages, FL 32163, USA
+
+Latitude : 28.847722
+Longitude : -82.016799
+
+Address
+3531 Neaptide Path, The Villages, FL 32163, USA
+
+Latitude : 28.847554
+Longitude : -82.016907
+
+Address
+3537 Neaptide Path, The Villages, FL 32163, USA
+
+Latitude : 28.84737
+Longitude : -82.016933
+
+Address
+3543 Neaptide Path, The Villages, FL 32163, USA
+
+Latitude : 28.847171
+Longitude : -82.017037
+
+Address
+3549 Neaptide Path, The Villages, FL 32163, USA
+
+Latitude : 28.847044
+Longitude : -82.017261
+
+Address
+3550 Neaptide Path, The Villages, FL 32163, USA
+
+Latitude : 28.84712
+Longitude : -82.017529
+
+Address
+3544 Neaptide Path, The Villages, FL 32163, USA
+
+Latitude : 28.847327
+Longitude : -82.017622
+
+Address
+3538 Neaptide Path, The Villages, FL 32163, USA
+
+Latitude : 28.847519
+Longitude : -82.017523
+
+Address
+3543 Nantuket Terrace, The Villages, FL 32163, USA
+
+Latitude : 28.847284
+Longitude : -82.018024
+
+Address
+Perry Villas, 2634 Lindewood St, The Villages, FL 32163, USA
+
+Latitude : 28.848175
+Longitude : -82.020125
+
+Address
+Perry Villas, 2638 Lindewood St, The Villages, FL 32163, USA
+
+Latitude : 28.848221
+Longitude : -82.020244
+
+Address
+Perry Villas, 2644 Lindewood St, The Villages, FL 32163, USA
+
+Latitude : 28.848269
+Longitude : -82.02039
+
+Address
+Perry Villas, 3490 Jubilee Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848638
+Longitude : -82.020325
+
+Address
+Perry Villas, 3484 Jubilee Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848752
+Longitude : -82.020345
+
+Address
+Perry Villas, 3478 Jubilee Ct, The Villages, FL 32163, USA
+
+Latitude : 28.848886
+Longitude : -82.020332
+
+Address
+Carribelle Villas, 3384 Alwyne Ave, The Villages, FL 32163, USA
+
+Latitude : 28.851222
+Longitude : -82.020299
+
+Address
+Carribelle Villas, 3380 Alwyne Ave, The Villages, FL 32163, USA
+
+Latitude : 28.851329
+Longitude : -82.020306
+
+Address
+Carribelle Villas, 3374 Alwyne Ave, The Villages, FL 32163, USA
+
+Latitude : 28.851454
+Longitude : -82.020297
+
+Gun Store
+4988 Co Rd 44A, The Villages, FL 32163, USA
+
+Latitude : 28.848498
+Longitude : -82.021006
+
+7/11
+6345 Powell Rd, The Villages, FL 32163, USA
+
+Latitude : 28.849229
+Longitude : -82.022347
