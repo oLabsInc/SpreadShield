@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpreadShield Locations</title>
+    <link rel="icon" type="image/png" href="./public/media/images/windshield-icon/logo_2a1a1a.png">
+
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+
+    <link rel="stylesheet" href="./public/style/oe.css">
+    <link rel="stylesheet" href="./public/style/spreadshield.css">
+    <style>
+
+        #fullscreenToggle {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+<div id="fullscreenToggle">
+    <img id="fullscreenBtn" src="./public/media/images/system/view-expand.png" alt="Fullscreen Icon">
+    <img id="exitFullscreenBtn" class="hidden" src="./public/media/images/system/view-collapse.png"
+        alt="Exit Fullscreen Icon">
+    </div>
+    
+    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true;'>
+    <!-- ASSETS -->
+        <a-assets>
+            <a-asset-item id="wsLogo" src="./public/media/models/system/WS_logo_1a2a3a.glb"></a-asset-item>
+            <a-asset-item id="mapMarker" src="./public/media/models/system/metal+ws-glass_map-marker_1a1a1i.glb"></a-asset-item>
+            <a-asset-item id="mapMarkerGreen" src="./public/media/models/system/green-glass_map-marker_1a1a1j.glb"></a-asset-item>
+            <a-asset-item id="mapMarkerYellowWhite" src="./public/media/models/system/white+yellow-glass_map-marker_1a1a1i.glb"></a-asset-item>
+            <a-asset-item id="mapMarkerRed" src="./public/media/models/system/red+black-glass_map-marker_1a1a1j.glb"></a-asset-item>
+            <a-asset-item id="mapMarkerPink" src="./public/media/models/system/pink+black-glass_map-marker_1a1a1j.glb"></a-asset-item>
+            <a-asset-item id="mapMarkerPurpleWhite" src="./public/media/models/system/metal+purple-glass_map-marker_1a1a1i.glb"></a-asset-item>
+            <a-asset-item id="stop" src="./public/media/models/system/markers/stop_1a.glb"></a-asset-item>
+            <a-asset-item id="cross" src="./public/media/models/system/markers/crosswalk_1a.glb"></a-asset-item>
+            <a-asset-item id="handicap" src="./public/media/models/system/markers/handicap_1a.glb"></a-asset-item>
+            <a-asset-item id="noLeft" src="./public/media/models/system/markers/no-left-turn_1a.glb"></a-asset-item>
+            <a-asset-item id="noPark1" src="./public/media/models/system/markers/no-parking_1a.glb"></a-asset-item>
+            <a-asset-item id="trafficLight1" src="./public/media/models/system/markers/traffic-light_1a.glb"></a-asset-item>
+            <a-asset-item id="parking" src="./public/media/models/system/markers/parking_1a.glb "></a-asset-item>
+        </a-assets>
+
+    <!-- SCENE -->
+        <a-camera gps-new-camera='gpsMinDistance: 1'></a-camera>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 42.333823; longitude: -71.121671">
+                <a-entity text="value: 350 Washington St; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
+                <a-entity text="value: House; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+                <a-gltf-model src="#wsLogo" position="0 4.5 0" scale="2 2 2" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true;"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="Government" look-at="[camera]"
+                gps-new-entity-place="latitude: 42.334064; longitude: -71.121778">
+                <a-entity text="value: 350 Washington St; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
+                <a-entity text="value: Courthouse; align: center; color: yellow;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarkerYellowWhite" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="Government" look-at="[camera]"
+                gps-new-entity-place="latitude: 42.333948; longitude: -71.120441">
+                <a-entity text="value: 333 Washington St; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
+                <a-entity text="value: Town Hall; align: center; color: yellow;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarkerYellowWhite" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+            
+            <a-entity class="spacial-entity-static" data-property-type="Education" look-at="[camera]"
+                gps-new-entity-place="latitude: 42.; longitude: -71.">
+                <a-entity text="value: 361 Washington St; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
+                <a-entity text="value: Library; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarkerPurpleWhite" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+        
+            
+            <a-entity class="spacial-entity-static" data-property-type="Education" look-at="[camera]"
+                gps-new-entity-place="latitude: 42.333552; longitude: -71.120928">
+                <a-entity text="value: 336 Washington St; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
+                <a-entity text="value: Boston Wine School; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarkerPurpleWhite" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+        
+        
+            <a-entity class="spacial-entity-static" data-property-type="Religious" look-at="[camera]"
+                gps-new-entity-place="latitude: 42.334199; longitude: -71.122029">
+                <a-entity text="value: 366 Washington St; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
+                <a-entity text="value: Christian Community; align: center; color: pink;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+        
+            <a-entity class="spacial-entity-static" data-property-type="Religious" look-at="[camera]"
+                gps-new-entity-place="latitude: 42.333495; longitude: -71.120796">
+                <a-entity text="value: 334 Washington St; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
+                <a-entity text="value: Brookline Municipal Credit Union; align: center; color: green;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarkerGreen" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+            </a-entity>
+
+
+<!-- CROSSWALKS -->
+    <a-entity class="spacial-entity-static" data-property-type="Crosswalk" look-at="[camera]"
+        gps-new-entity-place="latitude: 42.333296; longitude: -71.1215535">
+        <a-entity text="value: Crosswalk; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#cross" position="0 1 0" scale="1 1 1"></a-gltf-model>
+    </a-entity> 
+
+    <a-entity class="spacial-entity-static" data-property-type="Crosswalk" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.847086; longitude: -82.003973">
+        <a-entity text="value: Crosswalk; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#cross" position="0 1 0" scale="1 1 1"></a-gltf-model>
+    </a-entity> 
+
+
+
+    <a-entity class="spacial-entity-static" data-property-type="Crosswalk" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.8472; longitude: -82.004109">
+        <a-entity text="value: Patio Gate; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#stop" position="0 2 0" scale="1 1 1"></a-gltf-model>
+    </a-entity> 
+
+    <a-entity class="spacial-entity-static" data-property-type="Crosswalk" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.847265; longitude: -82.004023">
+        <a-entity text="value: Lower Patio; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#noLeft" position="0 2 0" scale="1 1 1"></a-gltf-model>
+    </a-entity> 
+
+    <a-entity class="spacial-entity-static" data-property-type="Crosswalk" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.847236; longitude: -82.004065">
+        <a-entity text="value: Upper Patio; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#trafficLight1" position="0 2 0" scale="1 1 1"></a-gltf-model>
+    </a-entity> 
+
+    <a-entity class="spacial-entity-static" data-property-type="Crosswalk" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.847143; longitude: -82.003933">
+        <a-entity text="value: Garage; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#noPark1" position="0 1 0" scale="1 1 1"></a-gltf-model>
+        <a-gltf-model src="#noPark1" position="0 0 1" rotation="0 90 0" scale="1 1 1"></a-gltf-model>
+    </a-entity> 
+
+
+    <a-entity class="spacial-entity-static" data-property-type="Crosswalk" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.847188; longitude: -82.003906">
+        <a-entity text="value: Illegal Smart Meter; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#handicap" position="0 2 0" scale="1 1 1"></a-gltf-model>
+    </a-entity> 
+
+
+
+
+
+
+<!-- STOP
+    <a-entity class="spacial-entity-static" data-property-type="Stop" look-at="[camera]"
+        gps-new-entity-place="latitude: 42.; longitude: -71.">
+        <a-entity text="value: Stop; align: center; color: orangered;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#stop" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- Crosswalk 
+    <a-entity class="spacial-entity-static" data-property-type="Crosswalk" look-at="[camera]" gps-new-entity-place="latitude: 42.; longitude: -71.">
+        <a-entity text="value: Crosswalk; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#cross" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- Business 
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+    gps-new-entity-place="latitude: 42.; longitude: -71.">
+    <a-entity text="value: Stop; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+    <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- Home 
+    <a-entity class="spacial-entity-static" data-property-type="Home" look-at="[camera]"
+    gps-new-entity-place="latitude: 42.; longitude: -71.">
+    <a-entity text="value: Stop; align: center; color: green;" scale="5 5 5" position="0 1 0"></a-entity>
+    <a-gltf-model src="#mapMarkerGreen" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- Government 
+    <a-entity class="spacial-entity-static" data-property-type="Government" look-at="[camera]"
+    gps-new-entity-place="latitude: 42.; longitude: -71.">
+    <a-entity text="value: Government; align: center; color: yellow;" scale="5 5 5" position="0 1 0"></a-entity>
+    <a-gltf-model src="#mapMarkerYellowWhite" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- Education 
+    <a-entity class="spacial-entity-static" data-property-type="Education" look-at="[camera]"
+    gps-new-entity-place="latitude: 42.; longitude: -71.">
+    <a-entity text="value: Educational; align: center; color: Purple;" scale="5 5 5" position="0 1 0"></a-entity>
+    <a-gltf-model src="#mapMarkerPurpleWhite" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- Religious 
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+    gps-new-entity-place="latitude: 42.; longitude: -71.">
+    <a-entity text="value: Stop; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+    <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+    </a-scene>
+
+
+
+    <script>
+        const
+            fullscreenToggle = document.getElementById('fullscreenToggle'),
+            fullscreenBtn = document.getElementById('fullscreenBtn'),
+            exitFullscreenBtn = document.getElementById('exitFullscreenBtn')
+
+        fullscreenBtn.addEventListener('click', e => {
+            document.documentElement.requestFullscreen().catch((e) => {
+                console.log(e)
+            })
+            fullscreenBtn.classList.toggle('hidden')
+            exitFullscreenBtn.classList.toggle('hidden')
+        })
+        exitFullscreenBtn.addEventListener('click', e => {
+            document.exitFullscreen()
+            fullscreenBtn.classList.toggle('hidden')
+            exitFullscreenBtn.classList.toggle('hidden')
+        })
+    </script>
+
+    <script>
+        const
+            spreadSpot1 = document.getElementById('spreadSpot_1'),
+            spreadSpot2 = document.getElementById('spreadSpot_2')
+    </script>
+
+</body>
+</html>
