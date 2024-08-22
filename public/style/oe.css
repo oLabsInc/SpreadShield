@@ -13,11 +13,12 @@
     color: rgb(65, 212, 50);
 }
 
-    TURN INTO CSS VARIABLES --(red) etc.
+    /* TURN INTO CSS VARIABLES --(red) etc. */
 
 
 
 /* FONTS */
+
 
 @font-face {
     font-family: 'Tron';
@@ -78,6 +79,17 @@
     font-family: "owners-text", sans-serif;
     font-weight: 200;
     font-style: normal;
+}
+.a-loader-title {
+    font-family: Tron;
+    color: lightskyblue;
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 100vh;
+    font-size: 5rem;
 }
 .hidden {
     display: none;

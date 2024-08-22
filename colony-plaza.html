@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpreadShield Locations</title>
+    <link rel="icon" type="image/png" href="./public/media/images/windshield-icon/logo_2a1a1a.png">
+
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+
+    <link rel="stylesheet" href="./public/style/oe.css">
+    <link rel="stylesheet" href="./public/style/spreadshield.css">
+    <style>
+
+        #fullscreenToggle {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+<div id="fullscreenToggle">
+    <img id="fullscreenBtn" src="./public/media/images/system/view-expand.png" alt="Fullscreen Icon">
+    <img id="exitFullscreenBtn" class="hidden" src="./public/media/images/system/view-collapse.png"
+        alt="Exit Fullscreen Icon">
+    </div>
+    
+    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true;'>
+    <!-- ASSETS -->
+        <a-assets>
+            <a-asset-item id="wsLogo" src="./public/media/models/system/WS_logo_1a2a3a.glb"></a-asset-item>
+            <a-asset-item id="mapMarker" src="./public/media/models/system/metal+ws-glass_map-marker_1a1a1i.glb"></a-asset-item>
+            <a-asset-item id="mapMarkerGreen" src="./public/media/models/system/green-glass_map-marker_1a1a1j.glb"></a-asset-item>
+            <a-asset-item id="mapMarkerYellowWhite" src="./public/media/models/system/white+yellow-glass_map-marker_1a1a1i.glb"></a-asset-item>
+            <a-asset-item id="mapMarkerRed" src="./public/media/models/system/red+black-glass_map-marker_1a1a1j.glb"></a-asset-item>
+            <a-asset-item id="mapMarkerPink" src="./public/media/models/system/pink+black-glass_map-marker_1a1a1j.glb"></a-asset-item>
+            <a-asset-item id="mapMarkerPurpleWhite" src="./public/media/models/system/metal+purple-glass_map-marker_1a1a1i.glb"></a-asset-item>
+            <a-asset-item id="stop" src="./public/media/models/system/markers/stop_1a.glb"></a-asset-item>
+            <a-asset-item id="cross" src="./public/media/models/system/markers/crosswalk_1a.glb"></a-asset-item>
+            <a-asset-item id="handicap" src="./public/media/models/system/markers/handicap_1a.glb"></a-asset-item>
+            <a-asset-item id="noLeft" src="./public/media/models/system/markers/no-left-turn_1a.glb"></a-asset-item>
+            <a-asset-item id="noPark1" src="./public/media/models/system/markers/no-parking_1a.glb"></a-asset-item>
+            <a-asset-item id="trafficLight1" src="./public/media/models/system/markers/traffic-light_1a.glb"></a-asset-item>
+            <a-asset-item id="parking" src="./public/media/models/system/markers/parking_1a.glb "></a-asset-item>
+            <a-asset-item id="yield" src="./public/media/models/system/markers/yield_1a.glb "></a-asset-item>
+        </a-assets>
+
+    <!-- SCENE -->
+        <a-camera gps-new-camera='gpsMinDistance: 1'></a-camera>
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.845469; longitude: -82.030148">
+                <a-entity text="value: 3003 Brownwood Blvd; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
+                <a-entity text="value: The Brownwood Hotel & Spa; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+                <a-gltf-model src="#wsLogo" position="0 4.5 0" scale="2 2 2" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true;"></a-gltf-model>
+            </a-entity>
+
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.86319504830362; longitude: -81.95648728547573">
+                <a-entity text="value: 3003 Brownwood Blvd; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
+                <a-entity text="value: Sarasota Plaza; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+                <a-gltf-model src="#wsLogo" position="0 4.5 0" scale="2 2 2" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true;"></a-gltf-model>
+            </a-entity>
+
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.865560204664025; longitude: -81.95620033695985">
+        <a-entity text="value: Dunkin; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86554141300196; longitude: -81.9560554976794">
+        <a-entity text="value: Motto Clear Aligners; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.865701142024268; longitude: -81.95668380512518">
+        <a-entity text="value: Bob Evans; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.865811285644206; longitude: -81.95797631506781">
+        <a-entity text="value: Walgreens; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.865845994363344; longitude: -81.9594424245238">
+        <a-entity text="value: Truist; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerGreen" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.866724009775837; longitude: -81.95751151954354">
+        <a-entity text="value: Citizens First Bank; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerGreen" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.867151330011065; longitude: -81.95656217172791">
+        <a-entity text="value: Beef 'O' Brady's; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86710199418437; longitude: -81.95635376813838">
+        <a-entity text="value: Cal's Barbershop; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.867047022276672; longitude: -81.95603330159146">
+        <a-entity text="value: Sage Dental; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.866992050339885; longitude: -81.95586976453919">
+        <a-entity text="value: Safe Ship; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86681990119053; longitude: -81.95539236846692">
+        <a-entity text="value: Publix Super Marker; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.866654984929607; longitude: -81.95484724494511">
+        <a-entity text="value: Salon Jaylee; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.866585546426922; longitude: -81.95465892955157">
+        <a-entity text="value: The Villages Insurance; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+    
+        <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+            gps-new-entity-place="latitude: 28.866576507166524; longitude: -81.95471194537328">
+            <a-entity text="value: Roberto's Flooring; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+            <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+        </a-entity>
+    
+        <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+            gps-new-entity-place="latitude: 28.866557128453632; longitude: -81.95461270363998">
+            <a-entity text="value: Fleet Feet; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+            <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+        </a-entity>
+    
+        <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+            gps-new-entity-place="latitude: 28.866533749626832; longitude: -81.95457887728053">
+            <a-entity text="value: Expedia Cruises; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+            <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+        </a-entity>
+    
+    
+        <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+            gps-new-entity-place="latitude: 28.866597516482862; longitude: -81.95675300076046">
+            <a-entity text="value: Colony Cleaners; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+            <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+        </a-entity>
+    
+    
+        <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+            gps-new-entity-place="latitude: 28.866459677953173; longitude: -81.95681193420795">
+            <a-entity text="value: Club Champion; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+            <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+        </a-entity>
+    
+    
+        <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+            gps-new-entity-place="latitude: 28.86419501798691; longitude: -81.95526390495934">
+            <a-entity text="value: Parady Cares; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+            <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+        </a-entity>
+    
+    
+        <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+            gps-new-entity-place="latitude: 28.863439341645435; longitude: -81.95408003710709">
+            <a-entity text="value: Florida Blue Medicare; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+            <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+        </a-entity>
+    
+        <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+            gps-new-entity-place="latitude: 28.863542088910243; longitude: -81.95423327386264">
+            <a-entity text="value: Netrali Patel; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+            <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+        </a-entity>
+    
+        <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+            gps-new-entity-place="latitude: 28.8630706449835; longitude: -81.95597686247821">
+            <a-entity text="value: Walmart; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+            <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+        </a-entity>
+    
+        <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+            gps-new-entity-place="latitude: 28.86262644179875; longitude: -81.95650900217571">
+            <a-entity text="value: Walmart Fuel Station; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+            <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+        </a-entity>
+    
+        <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+            gps-new-entity-place="latitude: 28.86651895825106; longitude: -81.95450072141386">
+            <a-entity text="value: Imagine Beauty & Wigs; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+            <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+        </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.866498992293373; longitude: -81.95437801035173">
+        <a-entity text="value: Edward Jones; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.866450684237023; longitude: -81.95423219070372">
+        <a-entity text="value: beals; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.866352028813576; longitude: -81.95396396980789">
+        <a-entity text="value: Fiesta Grande Mexican Grill; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86583702250867; longitude: -81.95459697111261">
+        <a-entity text="value: All Booked Up; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.865648498286003; longitude: -81.95465187702429">
+        <a-entity text="value: Sakura Japanese; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86562418036807; longitude: -81.95409998865965">
+        <a-entity text="value: Peachwave; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.865470369421185; longitude: -81.95417982156636">
+        <a-entity text="value: Meza Luna; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.865016614447033; longitude: -81.9549947682253">
+        <a-entity text="value: PDQ Chicken; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.864724189355407; longitude: -81.95442135967859">
+        <a-entity text="value: Tire Choice Auto; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86450706372101; longitude: -81.95373137732831">
+        <a-entity text="value: 7-Eleven; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.863679883574683; longitude: -81.9562817811981">
+        <a-entity text="value: Hand and Stone; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.863697501074203; longitude: -81.95642192661877">
+        <a-entity text="value: Lavie Nails; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86369221582466; longitude: -81.95651781559083">
+        <a-entity text="value: National Cremation Society; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86381025300044; longitude: -81.95666801929531">
+        <a-entity text="value: Quest Diagnostics; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.8638648671679; longitude: -81.95665393769687">
+        <a-entity text="value: TruEAR; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.864342867024273; longitude: -81.95658974047973">
+        <a-entity text="value: Hometown Property Management; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.864386910485482; longitude: -81.95624172386897">
+        <a-entity text="value: Alliant Dermotology; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86434991397995; longitude: -81.95606805084286">
+        <a-entity text="value: AgeWave Solutions; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.864840327613557; longitude: -81.95765876200512">
+        <a-entity text="value: Caitlin Dietrich; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.864983027674818; longitude: -81.95770503010861">
+        <a-entity text="value: Colony Plaza Animal Hospital; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+
+
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.865970637259196; longitude: -81.96001336288202">
+        <a-entity text="value: Colony Cottage Pool; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerBlue" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86610795278361; longitude: -81.96127218932487">
+        <a-entity text="value: Colony Cottage Recreation Center; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerBlue" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86610202146543; longitude: -81.96170558128168">
+        <a-entity text="value: Pickleball 1; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86610182827709; longitude: -81.96181374842558">
+        <a-entity text="value: Pickleball 2; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.866103480619923; longitude: -81.9619146908293">
+        <a-entity text="value: Pickleball 3; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.865940724724283; longitude: -81.96170620231322">
+        <a-entity text="value: Pickleball 4; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86593742003339; longitude: -81.96180997487778">
+        <a-entity text="value: Pickleball 5; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86593742003339; longitude: -81.96190997389455">
+        <a-entity text="value: Pickleball 6; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.866035734542034; longitude: -81.9620712930631">
+        <a-entity text="value: Tennis 1; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86602003727378; longitude: -81.96222317836215">
+        <a-entity text="value: Tennis 2; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.866709888674205; longitude: -81.96257694848026">
+        <a-entity text="value: Basketball; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86646477333599; longitude: -81.96249715276555">
+        <a-entity text="value: Boci 1; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.866455964821508; longitude: -81.96254945583905">
+        <a-entity text="value: Boci 2; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.866458900993077; longitude: -81.96260041780809">
+        <a-entity text="value: Boci 3; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86645772652446; longitude: -81.96265339143383">
+        <a-entity text="value: Boci 4; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.865798611065376; longitude: -81.96177955979293">
+        <a-entity text="value: Shuffleboard 1; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.865778057731962; longitude: -81.96179095918075">
+        <a-entity text="value: Shuffleboard 2; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86575574267964; longitude: -81.96179028862852">
+        <a-entity text="value: Shuffleboard 3; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.86573284038415; longitude: -81.96179162973297">
+        <a-entity text="value: Shuffleboard 4; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.866117057031214; longitude: -81.9624827710526">
+        <a-entity text="value: Gazebo; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+
+
+
+
+
+
+
+
+<!-- STOP
+    <a-entity class="spacial-entity-static" data-property-type="Stop" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.; longitude: -82.">
+        <a-entity text="value: Stop; align: center; color: orangered;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#stop" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- TRAFFIC LIGHT
+    <a-entity class="spacial-entity-static" data-property-type="Traffic Light" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.; longitude: -82.">
+        <a-entity text="value: Traffic Light; align: center; color: orangered;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#trafficLight" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- YIELD 
+    <a-entity class="spacial-entity-static" data-property-type="Yield" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.; longitude: -82.">
+        <a-entity text="value: Yield; align: center; color: red;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#yield" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- CROSSWALK 
+    <a-entity class="spacial-entity-static" data-property-type="Crosswalk" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.; longitude: -82.">
+        <a-entity text="value: Crosswalk; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#cross" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- CART CROSSING
+    <a-entity class="spacial-entity-static" data-property-type="Crosswalk" look-at="[camera]"
+        gps-new-entity-place="latitude: 28.; longitude: -82.">
+        <a-entity text="value: Cart Crossing; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+        <a-gltf-model src="#cross" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- BUSINESS 
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+    gps-new-entity-place="latitude: 28.; longitude: -82.">
+    <a-entity text="value: Stop; align: center; color: purple;" scale="5 5 5" position="0 1 0"></a-entity>
+    <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- HOME 
+    <a-entity class="spacial-entity-static" data-property-type="Home" look-at="[camera]"
+    gps-new-entity-place="latitude: 28.; longitude: -82.">
+    <a-entity text="value: Stop; align: center; color: green;" scale="5 5 5" position="0 1 0"></a-entity>
+    <a-gltf-model src="#mapMarkerGreen" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- GOVERNMENT 
+    <a-entity class="spacial-entity-static" data-property-type="Government" look-at="[camera]"
+    gps-new-entity-place="latitude: 28.; longitude: -82.">
+    <a-entity text="value: Government; align: center; color: yellow;" scale="5 5 5" position="0 1 0"></a-entity>
+    <a-gltf-model src="#mapMarkerYellowWhite" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- EDUCATION 
+    <a-entity class="spacial-entity-static" data-property-type="Education" look-at="[camera]"
+    gps-new-entity-place="latitude: 28.; longitude: -82.">
+    <a-entity text="value: Educational; align: center; color: Purple;" scale="5 5 5" position="0 1 0"></a-entity>
+    <a-gltf-model src="#mapMarkerPurpleWhite" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+<!-- RELIGIOUS 
+    <a-entity class="spacial-entity-static" data-property-type="Business" look-at="[camera]"
+    gps-new-entity-place="latitude: 28.; longitude: -82.">
+    <a-entity text="value: Stop; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+    <a-gltf-model src="#mapMarkerPink" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
+    </a-entity>
+-->
+
+    </a-scene>
+
+
+
+    <script>
+        const
+            fullscreenToggle = document.getElementById('fullscreenToggle'),
+            fullscreenBtn = document.getElementById('fullscreenBtn'),
+            exitFullscreenBtn = document.getElementById('exitFullscreenBtn')
+
+        fullscreenBtn.addEventListener('click', e => {
+            document.documentElement.requestFullscreen().catch((e) => {
+                console.log(e)
+            })
+            fullscreenBtn.classList.toggle('hidden')
+            exitFullscreenBtn.classList.toggle('hidden')
+        })
+        exitFullscreenBtn.addEventListener('click', e => {
+            document.exitFullscreen()
+            fullscreenBtn.classList.toggle('hidden')
+            exitFullscreenBtn.classList.toggle('hidden')
+        })
+    </script>
+
+    <script>
+        const
+            spreadSpot1 = document.getElementById('spreadSpot_1'),
+            spreadSpot2 = document.getElementById('spreadSpot_2')
+    </script>
+
+</body>
+</html>

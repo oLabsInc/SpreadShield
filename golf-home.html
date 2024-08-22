@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sweetgum Golf Course | WideSpread</title>
+    <title>Golf AR | WideSpread</title>
     <link rel="icon" type="image/png" href="./public/media/images/windshield-icon/logo_2a1a1a.png">
 
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
@@ -16,6 +16,7 @@
             left: 10px;
             z-index: 100;
         }
+
     </style>
 </head>
 <body>
@@ -25,7 +26,7 @@
         alt="Exit Fullscreen Icon">
     </div>
     
-    <a-scene vr-mode-ui='enabled: false' renderer='antialias: true;' fog="type:  exponential;  color:  #000;  density:  0.0025" rotation-reader>
+    <a-scene vr-mode-ui='enabled: false' renderer='antialias: true;' fog="type:  exponential;  color:  #000;  density:  0.0025" rotation-reader loading-screen="dotsColor: lightskyblue; backgroundColor: black">
     <!-- <a-scene vr-mode-ui='enabled: false' renderer='antialias: true;' rotation-reader> -->
         <a-assets>
             <a-asset-item id="wsLogo" src="./public/media/models/system/WS_logo_1a2a3a.glb"></a-asset-item>
@@ -33,12 +34,12 @@
             <a-asset-item id="mapMarker" src="./public/media/models/system/metal+ws-glass_map-marker_1a1a1i.glb"></a-asset-item>
             <a-asset-item id="puttingGreen" src="./public/media/models/backdrop/putting-green_1a1a1c.glb"></a-asset-item>
             <a-asset-item id="vrBg" src="./public/media/models/backdrop/golf-env.glb"></a-asset-item>
-            <a-asset-item id="teeBoxIcon" src="./public/media/models/prop/tee-box-icon.glb"></a-asset-item>
+            <a-asset-item id="teeBoxIcon" src="./public/media/models/prop/tee-box-icon_2.glb"></a-asset-item>
         </a-assets>
                 <a-gltf-model src="#puttingGreen" position="2 -1.6 -21" rotation="0 90 0" scale="1 1.5 1"></a-gltf-model>
                 <a-gltf-model src="#vrBg" position="0 21.5 -50" rotation="0 340 0" scale="0.2 0.1 0.2"></a-gltf-model>
-                <a-gltf-model src="#teeBoxIcon" position="-0.5 0.89224 -1.20644" rotation="0 320 0" scale="0.15 0.15 0.15"></a-gltf-model>
-
+                <!-- <a-gltf-model src="#teeBoxIcon" position="-0.5 0.89224 -1.20644" rotation="0 320 0" scale="0.15 0.15 0.15"></a-gltf-model> -->
+                <a-gltf-model src="#teeBoxIcon" position="-1.5 -1.55477 -5.19963" rotation="0 -53.76120287492027 0" scale="0.75 0.75 0.75" gltf-model="./public/media/models/prop/tee-box-icon_2.glb"></a-gltf-model>
                 <a-light light="type: spot; color: #9c9c9c; intensity: 1; penumbra: 0.47; castShadow: true" position="0.25 1.75 -0.4401"></a-light>
                 <a-light light="type: ambient; color: #fff; intensity: 0.5; penumbra: 0.47; castShadow: true" position="0 8 -3"></a-light>
 
@@ -46,9 +47,7 @@
                 <a-gltf-model id="spreadHeader" src="#wsHeader" position="0 2 -3.5" rotation="" scale="4 4 4" animation="property: position; to: 0 2.1 -3.4; dur: 5000; easing: easeInOutQuad; loop: true; autoplay: true; dir: alternate;"></a-gltf-model>
 
                 <a-text value="Golf AR" color="#00ccff" position="0 1.75 -2.5" align="center" scale="0.5 0.5 0.5" opacity="0.5"></a-text>
-                <!-- <a-plane color="#0ea800" width="100" height="100" position="0 -0.1 -20" rotation="-90 0 0" material="opacity: 1; transparent: true; alphaTest: 0.5"></a-plane> -->
-
-                
+                <a-entity light="type: point" position="0 1 -3" rotation="43.52817665388377 0 0" visible=""></a-entity>
 
                 <a-sky color="#000" material="opacity: 0.4;"></a-sky>
 
