@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SpreadShield Locations</title>
+    <title></title>
     <link rel="icon" type="image/png" href="./public/media/images/windshield-icon/logo_2a1a1a.png">
 
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
@@ -53,9 +53,17 @@
             <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
                 gps-new-entity-place="latitude: 42.333823; longitude: -71.121671">
                 <a-entity text="value: 350 Washington St; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
-                <a-entity text="value: House; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-entity text="value: Brookline Police Department; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-entity text="value: +16177302222; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
                 <a-gltf-model src="#mapMarker" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
                 <a-gltf-model src="#wsLogo" position="0 4.5 0" scale="2 2 2" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true;"></a-gltf-model>
+            </a-entity>
+
+            <a-entity class="spacial-entity-static" data-property-type="Government" look-at="[camera]"
+                gps-new-entity-place="latitude: 42.334064; longitude: -71.121778">
+                <a-entity text="value: 350 Washington St; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
+                <a-entity text="value: Brookline Fire Department; align: center; color: yellow;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#mapMarkerYellowWhite" position="0 1.5 0" scale="1 1 1"></a-gltf-model>
             </a-entity>
 
             <a-entity class="spacial-entity-static" data-property-type="Government" look-at="[camera]"
