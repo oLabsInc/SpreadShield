@@ -34,8 +34,18 @@
             <a-asset-item id="wsHeader" src="./public/media/models/system/WS_3d_main-header_1a1a1a.glb"></a-asset-item>
             <a-asset-item id="mapMarker" src="./public/media/models/system/metal+ws-glass_map-marker_1a1a1i.glb"></a-asset-item>
             <a-asset-item id="puttingGreen" src="./public/media/models/backdrop/putting-green_1a1a1c.glb"></a-asset-item>
+            <a-asset-item id="blueprints" src="./public/media/models/structure/3558_1a1a1a.glb"></a-asset-item>
         </a-assets>
         <a-camera gps-new-camera='gpsMinDistance: 1'></a-camera>
+
+
+            <a-entity class="spacial-entity-static" data-property-type="House" look-at="[camera]"
+                gps-new-entity-place="latitude: 28.847086; longitude: -82.003973">
+                <a-entity text="value: 3558 Cosmos Way; align: center; color: #FFF;" scale="5 5 5" position="0 1.25 0"></a-entity>
+                <a-entity text="value: House; align: center; color: lightskyblue;" scale="5 5 5" position="0 1 0"></a-entity>
+                <a-gltf-model src="#blueprints" position="0 1.5 0" scale="1 1 1" material=""
+                    animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true;"></a-gltf-model>
+            </a-entity>
 
 
 
