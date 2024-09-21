@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<button onclick="getLocation()">Get Coordinates</button>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            // Success function
+            showPosition,
+            // Error function
+            null, 
+            // Options. See MDN for details.
+            {
+               enableHighAccuracy: true,
+               timeout: 5000,
+               maximumAge: 0
+            });
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    const currentPos = `${position.coords.latitude}, ${position.coords.longitude}`
+    x.innerHTML = currentPos
+    console.log(currentPos)
+    const copyContent = async () => {
+        try {
+            await navigator.clipboard.writeText(currentPos);
+            console.log('Content copied to clipboard', currentPos);
+        } catch (err) {
+            console.error('Failed to copy: ', err);
+        }
+    }
+    copyContent()
+
+}
+
+</script>
+
+</body>
+</html>
